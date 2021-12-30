@@ -26,14 +26,55 @@ function typingSeekJob() {
     .typeString("\xa0\xa0\xa0\xa0" + "Automation")
     .pauseFor(2500)
     .deleteAll()
-
     .start();
 }
 
 typingSeekJob();
-// change logo img to color when hover
 
 
+// change university logo img to color when hover
+document.querySelector(".hero-meiji_hover_color").onmouseout = function () {
+  this.src = 'images/decorations/hero-meiji.svg';
+};
+document.querySelector(".hero-meiji_hover_color").onmouseover = function () {
+  this.src = 'images/decorations/hero-color_meiji.svg';
+}
+
+document.querySelector(".hero-yfu_hover_color").onmouseout = function () {
+  this.src = 'images/decorations/hero-yfu.svg';
+};
+document.querySelector(".hero-yfu_hover_color").onmouseover = function () {
+  this.src = 'images/decorations/hero-color_yfu.svg';
+}
+
+document.querySelector(".hero-swu_bas_hover_color").onmouseout = function () {
+  this.src = 'images/decorations/hero-swu_bas.svg';
+};
+document.querySelector(".hero-swu_bas_hover_color").onmouseover = function () {
+  this.src = 'images/decorations/hero-color_swu_bas.svg';
+}
+
+document.querySelector(".hero-rikyo_hover_color").onmouseout = function () {
+  this.src = 'images/decorations/hero-rikyo.svg';
+};
+document.querySelector(".hero-rikyo_hover_color").onmouseover = function () {
+  this.src = 'images/decorations/hero-color_rikyo.svg';
+}
+
+document.querySelector(".hero-swu_hover_color").onmouseout = function () {
+  this.src = 'images/decorations/hero-swu.svg';
+};
+document.querySelector(".hero-swu_hover_color").onmouseover = function () {
+  this.src = 'images/decorations/hero-color_swu.svg';
+}
+
+
+
+
+
+
+
+// change tech logo img to color when hover
 
 document.querySelector(".ai_logo").onmouseout = function () {
   this.src = 'images/program_logo/ai-logo.svg';

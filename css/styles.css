@@ -464,7 +464,7 @@ p {
 .hero-logo-description {
     opacity: 0;
     transition: opacity 0.3s ease-in;
-    background-color:rgba(255, 255, 255, 0.95);
+    background-color:rgba(255, 255, 255, 0.97);
     border-radius: 5px;
 }
 
@@ -477,14 +477,14 @@ p {
 }
 
 .hero-logo-font p {
-    color:#969198;
+    color:var(--color-primary);
     font-size: 1.7rem;
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
 }
 
 .hero-logo-font b {
-    color:#969198;
+    color:var(--color-secondary);
     font-size: 1.8rem;
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
@@ -1559,3 +1559,8 @@ p {
 .footer-hover_ani:hover{
     transform: translate(0,  -5px);
 }
+
+
+
+
+
