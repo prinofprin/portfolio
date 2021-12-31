@@ -326,7 +326,7 @@ let workDetailAni = anime({
 
 //work background
 let workBackGroundAni = anime({
-  targets: ".work_background",
+  targets: ".work_background_ani",
   easing: "easeInSine",
   keyframes: [
     { backgroundColor: '#ffffff', duration: 60 },
@@ -486,8 +486,6 @@ let smallGearRightAni = anime({
   easing: "linear",
 });
 
-
-
 let doorLeftAni = anime({
   targets: ".door_left_ani",
   keyframes: [
@@ -512,8 +510,15 @@ let doorRightAni = anime({
   easing: "linear",
 });
 
-
-
+let circleCropAni = anime({
+  targets: ".circle_crop_ani",
+  easing: "easeInOutSine",
+  keyframes: [
+    { clipPath: "circle(-1000% at 50% 50%)" },
+    { clipPath: "circle(100% at 50% 50%)" },
+  ],
+  autoplay: false,
+});
 
 let envolopAni = anime({
   targets: ".envolop_ani",
@@ -525,11 +530,8 @@ let paperAni = anime({
   targets: ".paper_ani",
   opacity: ["0", "1"],
   keyframes: [
-    { translateY: "-1130" },
-    { translateY: "-1130" },
-    { translateY: "-1130" },
-    { translateY: "-1130" },
-    { translateY: "-1130" },
+    { translateY: "-2700"},
+    { translateY: "-2700"},
     { translateY: "40" }
   ],
   autoplay: false,
@@ -594,8 +596,9 @@ window.onscroll = function (e) {
   doorLeftAni.seek(window.pageYOffset * 0.08);
   doorRightAni.seek(window.pageYOffset * 0.08);
 
-  paperAni.seek(window.pageYOffset * 0.104);
-  footerArrowAni.seek(window.pageYOffset * 0.104);
+  circleCropAni.seek(window.pageYOffset * 0.099);
+  paperAni.seek(window.pageYOffset * 0.096);
+  footerArrowAni.seek(window.pageYOffset * 0.096);
 
   console.log(window.pageYOffset);
 
@@ -652,17 +655,17 @@ var scramble12 = new ShuffleText(document.getElementById("work3_company"));
 var scramble13 = new ShuffleText(document.getElementById("project1_type"));
 var scramble14 = new ShuffleText(document.getElementById("project1_skills"));
 var scramble15 = new ShuffleText(document.getElementById("project1_year"));
-var scramble16 = new ShuffleText(document.getElementById("project1_company"));
+//var scramble16 = new ShuffleText(document.getElementById("project1_company"));
 
 var scramble17 = new ShuffleText(document.getElementById("project2_type"));
 var scramble18 = new ShuffleText(document.getElementById("project2_skills"));
 var scramble19 = new ShuffleText(document.getElementById("project2_year"));
-var scramble20 = new ShuffleText(document.getElementById("project2_company"));
+//var scramble20 = new ShuffleText(document.getElementById("project2_company"));
 
 var scramble21 = new ShuffleText(document.getElementById("project3_type"));
 var scramble22 = new ShuffleText(document.getElementById("project3_skills"));
 var scramble23 = new ShuffleText(document.getElementById("project3_year"));
-var scramble24 = new ShuffleText(document.getElementById("project3_company"));
+//var scramble24 = new ShuffleText(document.getElementById("project3_company"));
 
 
 

@@ -847,13 +847,18 @@ p {
 
 /*certificate + language hover*/
 
-/*1150*/
-
 .flex_row{
     display: flex;
     flex-direction: row;
     display: relative;
 }
+
+.flex_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
 
 .language_description{
     position: absolute;
@@ -1067,21 +1072,21 @@ p {
     
 }
 
-.work_background{
+.black_background{
     background-color: var(--color-background)
 }
 
-.work_background p {
+.black_background p {
     color: white;
     opacity: 0.9;
 }
 
-.work_background h6 {
+.black_background h6 {
     color: white;
     opacity: 0.9;
 }
 
-.work_background h2 {
+.black_background h2 {
     color: white;
     opacity: 0.8;
 }
@@ -1093,8 +1098,6 @@ p {
     margin-bottom: 17rem;
     margin-top: 12rem;
 }
-
-
 
 .work_display_head{
     font-weight: 100;
@@ -1455,9 +1458,28 @@ p {
     right: -3rem;
 }
 
-.final_section{
-    background-color: var(--color-background);
+/*reference*/
+.reference_container{
+    margin: 0 auto;
 }
+
+.Z_index_10{
+    z-index: 10;
+}
+
+.reference_name_details{
+    margin-top: 0.5rem;
+}
+
+.reference_container h6{
+    margin-top: 2rem;
+}
+
+.reference_img{
+    width: 17rem;
+    z-index: 10;
+}
+
 .final_section h3{
     color: white;
     font-weight: 300;
@@ -1473,7 +1495,7 @@ p {
 }
 
 .fianl_transition_1{
-    height: 110rem;
+    height: 80rem;
 }
 
 .fianl_transition_2 {
@@ -1534,8 +1556,6 @@ p {
     background-color: white;
     opacity: 0.5;
 }
-
-
 
 .footer_tel{
     margin-right: 10rem;
