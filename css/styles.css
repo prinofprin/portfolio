@@ -1463,7 +1463,7 @@ p {
     margin: 0 auto;
 }
 
-.Z_index_10{
+.z_index_10{
     z-index: 10;
 }
 
@@ -1472,12 +1472,16 @@ p {
 }
 
 .reference_container h6{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .reference_img{
-    width: 17rem;
+    width: 12rem;
     z-index: 10;
+}
+
+.reference_email{
+    font-weight: 0;
 }
 
 .final_section h3{

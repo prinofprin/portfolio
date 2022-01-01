@@ -514,8 +514,8 @@ let circleCropAni = anime({
   targets: ".circle_crop_ani",
   easing: "easeInOutSine",
   keyframes: [
-    { clipPath: "circle(-1000% at 50% 50%)" },
-    { clipPath: "circle(100% at 50% 50%)" },
+    { clipPath: "circle(-1000% at 50% 50%)", opacity: "-8" },
+    { clipPath: "circle(100% at 50% 50%)", opacity: "1" },
   ],
   autoplay: false,
 });
@@ -530,8 +530,8 @@ let paperAni = anime({
   targets: ".paper_ani",
   opacity: ["0", "1"],
   keyframes: [
-    { translateY: "-2700"},
-    { translateY: "-2700"},
+    { translateY: "-2700" },
+    { translateY: "-2700" },
     { translateY: "40" }
   ],
   autoplay: false,
@@ -596,9 +596,9 @@ window.onscroll = function (e) {
   doorLeftAni.seek(window.pageYOffset * 0.08);
   doorRightAni.seek(window.pageYOffset * 0.08);
 
-  circleCropAni.seek(window.pageYOffset * 0.099);
-  paperAni.seek(window.pageYOffset * 0.096);
-  footerArrowAni.seek(window.pageYOffset * 0.096);
+  circleCropAni.seek(window.pageYOffset * 0.1);
+  paperAni.seek(window.pageYOffset * 0.097);
+  footerArrowAni.seek(window.pageYOffset * 0.097);
 
   console.log(window.pageYOffset);
 
