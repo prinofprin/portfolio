@@ -1,7 +1,139 @@
-//circle_under_curser
+//main open animation
+let openinglineAni = anime({
+  targets: ".opening-line",
+  clipPath: ["polygon(0 0, 100% 0, 100% 0, 0 0)", " polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
+  easing: "easeInOutSine",
+  duration: 700,
+  autoplay: false
+});
+
+let openingHeadAni = anime({
+  targets: ".opening-head",
+  clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
+    keyframes: [
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 0)" },
+    { backgroundColor: "rgba(255, 255, 255, 0)" },
+  ],
+  easing: "easeInOutSine",
+  delay: 400,
+  duration: 400,
+  autoplay: false
+});
+
+let openingDetailAni = new ShuffleText(document.getElementById("opening-detail")); 
+
+let openingMainAni = anime({
+  targets: ".opening",
+  clipPath: ["  polygon(0 0, 100% 0, 100% 100%, 0 100%)", " polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"],
+  easing: "easeInOutSine",
+  duration: 200,
+  autoplay: false,
+  delay: 1200
+});
+
+let openingDelay=1000;
+
+//open animation
+let start1Ani = anime({
+  targets: ".start1_ani",
+  clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
+    keyframes: [
+    { backgroundColor: "rgba(73, 73, 72, 1)" },
+    { backgroundColor: "rgba(73, 73, 72, 1)" },
+    { backgroundColor: "rgba(73, 73, 72, 1)" },
+    { backgroundColor: "rgba(73, 73, 72, 0)" },
+    { backgroundColor: "rgba(73, 73, 72, 0)" },
+  ],
+  easing: "easeInOutSine",
+  duration: 700,
+  autoplay: false,
+  delay: 100+openingDelay
+});
+
+let start2Ani = anime({
+  targets: ".start2_ani",
+  clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
+    keyframes: [
+    { backgroundColor: "rgba(27, 27, 27, 1)" },
+    { backgroundColor: "rgba(27, 27, 27, 1)" },
+    { backgroundColor: "rgba(27, 27, 27, 1)" },
+    { backgroundColor: "rgba(27, 27, 27, 0)" },
+    { backgroundColor: "rgba(27, 27, 27, 0)" },
+  ],
+  easing: "easeInOutSine",
+  duration: 700,
+  autoplay: false,
+  delay: 100+openingDelay
+});
+
+let start3Ani = anime({
+  targets: ".start3_ani",
+  opacity: ["0","1"],
+  easing: "easeInOutSine",
+  duration: 700,
+  autoplay: false,
+  delay: 600+openingDelay
+});
+
+let start4Ani = anime({
+  targets: ".start4_ani",
+  opacity: ["0","1"],
+  easing: "easeInOutSine",
+  duration: 700,
+  autoplay: false,
+  delay: 800+openingDelay
+});
+
+let start5Ani = anime({
+  targets: ".start5_ani",
+  opacity: ["0","1"],
+  easing: "easeInOutSine",
+  duration: 700,
+  autoplay: false,
+  delay: 400+openingDelay
+});
+
+let start6Ani = anime({
+  targets: ".start6_ani",
+  opacity: ["0","1"],
+  easing: "easeInOutSine",
+  duration: 700,
+  autoplay: false,
+  delay: 600+openingDelay
+});
+
+let start7Ani = anime({
+  targets: ".start7_ani",
+  clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
+    keyframes: [
+    { opacity: "0" },
+    { opacity: "1" },
+  ],
+  easing: "easeInOutSine",
+  duration: 400,
+  autoplay: false,
+  delay: 700+openingDelay
+});
 
 
+window.onload = function (e) {
+  openinglineAni.play()
+  openingDetailAni.start()
+  openingHeadAni.play()
+  openingMainAni.play()
+  start1Ani.play()
+  start2Ani.play()
+  start3Ani.play()
+  start4Ani.play()
+  start5Ani.play()
+  start6Ani.play()
+  start7Ani.play()
+}
 
+//type animation
 function typingSeekJob() {
   let app = document.getElementById("wanted_job");
 
@@ -67,10 +199,6 @@ document.querySelector(".hero-swu_hover_color").onmouseout = function () {
 document.querySelector(".hero-swu_hover_color").onmouseover = function () {
   this.src = 'images/decorations/hero-color_swu.svg';
 }
-
-
-
-
 
 
 

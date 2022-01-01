@@ -91,8 +91,47 @@ html {
     scroll-behavior: smooth;
 }
 
-/* curser */
+/* opening */
+/*1150*/
+.opening{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 101;
+}
 
+.opening h6{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 200;
+    margin-top: 0;  
+}
+
+.opening h2{
+    color: white;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.opening-line{
+    background: white;
+    width: 5px;
+    height: 12rem;
+    margin-right: 3rem;
+}
+
+.opening-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.opening{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
 
 /* moble horizontal view*/
 
