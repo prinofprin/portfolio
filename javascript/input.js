@@ -6,7 +6,7 @@ let openingLoadingAni = anime({
     { translateX: 1000, opacity: 0},
   ],
   easing: "easeInOutSine",
-  duration: 0,
+  duration: 100,
   autoplay: false
 });
 
@@ -16,7 +16,7 @@ let openinglineAni = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 0
+  delay: 100
 });
 
 let openingHeadAni = anime({
@@ -30,7 +30,7 @@ let openingHeadAni = anime({
     { backgroundColor: "rgba(255, 255, 255, 0)" },
   ],
   easing: "easeInOutSine",
-  delay: 200,
+  delay: 300,
   duration: 400,
   autoplay: false
 });
@@ -62,7 +62,7 @@ let start1Ani = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 100+openingDelay
+  delay: 200+openingDelay
 });
 
 let start2Ani = anime({
@@ -78,43 +78,47 @@ let start2Ani = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 250+openingDelay
+  delay: 350+openingDelay
 });
 
 let start3Ani = anime({
   targets: ".start3_ani",
   opacity: ["0","1"],
+  translateX: ["500","0"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 600+openingDelay
+  delay: 900+openingDelay
 });
 
 let start4Ani = anime({
   targets: ".start4_ani",
   opacity: ["0","1"],
+  translateX: ["-500","0"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 800+openingDelay
+  delay: 1100+openingDelay
 });
 
 let start5Ani = anime({
   targets: ".start5_ani",
   opacity: ["0","1"],
+  scale: ["3","1"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 400+openingDelay
+  delay: 300+openingDelay
 });
 
 let start6Ani = anime({
   targets: ".start6_ani",
   opacity: ["0","1"],
+  scale: ["4","1"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 800+openingDelay
+  delay: 600+openingDelay
 });
 
 let start7Ani = anime({
