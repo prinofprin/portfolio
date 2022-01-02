@@ -96,6 +96,8 @@ html {
 
 .opening-loading_text{
     font-weight: 300;
+    opacity: 1;
+    font-size: 2.5rem;
 }
 
 .opening-loading{

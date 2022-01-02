@@ -84,7 +84,7 @@ let start2Ani = anime({
 let start3Ani = anime({
   targets: ".start3_ani",
   opacity: ["0","1"],
-  translateX: ["500","0"],
+  translateX: ["90","0"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
@@ -94,7 +94,7 @@ let start3Ani = anime({
 let start4Ani = anime({
   targets: ".start4_ani",
   opacity: ["0","1"],
-  translateX: ["-500","0"],
+  translateX: ["-90","0"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
@@ -134,6 +134,32 @@ let start7Ani = anime({
   delay: 900+openingDelay
 });
 
+let openingLogo1Ani = anime({
+  targets: ".opening_logo1_ani",
+  opacity: ["0", "1"],
+  easing: "easeInOutSine",
+  duration: 1000,
+  autoplay: false,
+  delay: 1400+openingDelay
+});
+
+let openingLogo2Ani = anime({
+  targets: ".opening_logo2_ani",
+  opacity: ["0", "1"],
+  easing: "easeInOutSine",
+  duration: 1000,
+  autoplay: false,
+  delay: 1000+openingDelay
+});
+
+let openingLogo3Ani = anime({
+  targets: ".opening_logo3_ani",
+  opacity: ["0", "1"],
+  easing: "easeInOutSine",
+  duration: 1000,
+  autoplay: false,
+  delay: 1700+openingDelay
+});
 
 window.onload = function (e) {
   openingLoadingAni.play()
@@ -148,6 +174,9 @@ window.onload = function (e) {
   start5Ani.play()
   start6Ani.play()
   start7Ani.play()
+  openingLogo1Ani.play()
+  openingLogo2Ani.play()
+  openingLogo3Ani.play()
 }
 
 //type animation
