@@ -137,28 +137,31 @@ let start7Ani = anime({
 let openingLogo1Ani = anime({
   targets: ".opening_logo1_ani",
   opacity: ["0", "1"],
+  scale: ["1.9","1"],
   easing: "easeInOutSine",
-  duration: 1000,
+  duration: 200,
   autoplay: false,
-  delay: 1400+openingDelay
+  delay: 1600+openingDelay
 });
 
 let openingLogo2Ani = anime({
   targets: ".opening_logo2_ani",
   opacity: ["0", "1"],
+  scale: ["1.9","1"],
   easing: "easeInOutSine",
-  duration: 1000,
+  duration: 200,
   autoplay: false,
-  delay: 1000+openingDelay
+  delay: 1200+openingDelay
 });
 
 let openingLogo3Ani = anime({
   targets: ".opening_logo3_ani",
   opacity: ["0", "1"],
+  scale: ["1.9","1"],
   easing: "easeInOutSine",
-  duration: 800,
+  duration: 200,
   autoplay: false,
-  delay: 1600+openingDelay
+  delay: 1800+openingDelay
 });
 
 window.onload = function (e) {
@@ -738,7 +741,6 @@ let footerArrowAni = anime({
   keyframes: [
     { rotate: "-1000" },
     { rotate: "-1000" },
-
     { rotate: "0" }
   ],
   autoplay: false,
