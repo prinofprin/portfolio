@@ -1,10 +1,22 @@
 //main open animation
+let openingLoadingAni = anime({
+  targets: ".opening-loading",
+  keyframes: [
+    { translateY: 0, opacity: 1},
+    { translateY: 1000, opacity: 0},
+  ],
+  easing: "easeInOutSine",
+  duration: 200,
+  autoplay: false
+});
+
 let openinglineAni = anime({
   targets: ".opening-line",
   clipPath: ["polygon(0 0, 100% 0, 100% 0, 0 0)", " polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
   easing: "easeInOutSine",
   duration: 700,
-  autoplay: false
+  autoplay: false,
+  delay: 200
 });
 
 let openingHeadAni = anime({
@@ -18,7 +30,7 @@ let openingHeadAni = anime({
     { backgroundColor: "rgba(255, 255, 255, 0)" },
   ],
   easing: "easeInOutSine",
-  delay: 400,
+  delay: 500,
   duration: 400,
   autoplay: false
 });
@@ -66,7 +78,7 @@ let start2Ani = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 100+openingDelay
+  delay: 250+openingDelay
 });
 
 let start3Ani = anime({
@@ -102,7 +114,7 @@ let start6Ani = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 600+openingDelay
+  delay: 800+openingDelay
 });
 
 let start7Ani = anime({
@@ -115,11 +127,12 @@ let start7Ani = anime({
   easing: "easeInOutSine",
   duration: 400,
   autoplay: false,
-  delay: 700+openingDelay
+  delay: 900+openingDelay
 });
 
 
 window.onload = function (e) {
+  openingLoadingAni.play()
   openinglineAni.play()
   openingDetailAni.start()
   openingHeadAni.play()
