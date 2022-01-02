@@ -1111,7 +1111,7 @@ p {
 }
 
 .work-head{
-    margin-right: 7rem;
+    margin-right: 5rem;
 }
 
 .work-line{
@@ -1478,6 +1478,18 @@ p {
 
 .small_right_gear_img{
     width: 6rem;
+}
+
+.final_circle_img{
+    width: 30rem;
+}
+
+
+.final_circle_position{
+    top: -15.3rem;
+    position: absolute;
+    left: -16rem;
+    z-index: 0;
 }
 
 .small_right_gear_position{

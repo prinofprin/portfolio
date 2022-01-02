@@ -43,7 +43,7 @@ let openingMainAni = anime({
   easing: "easeInOutSine",
   duration: 200,
   autoplay: false,
-  delay: 1200
+  delay: 1100
 });
 
 let openingDelay=1000;
@@ -156,9 +156,9 @@ let openingLogo3Ani = anime({
   targets: ".opening_logo3_ani",
   opacity: ["0", "1"],
   easing: "easeInOutSine",
-  duration: 1000,
+  duration: 800,
   autoplay: false,
-  delay: 1700+openingDelay
+  delay: 1600+openingDelay
 });
 
 window.onload = function (e) {
@@ -614,6 +614,27 @@ let workDescriptionLineAni = anime({
 
 
 //final section 
+let finalCircleAni = anime({
+  targets: ".final_circle_ani",
+  keyframes: [
+    { rotate: "-460" },
+    { rotate: "-460" },
+    { rotate: "-220" }
+  ],
+  autoplay: false,
+  easing: "linear",
+});
+
+let finalSmallCircleAni = anime({
+  targets: ".final_small_circle_ani",
+  keyframes: [
+    { rotate: "460" },
+    { rotate: "460" },
+    { rotate: "220" }
+  ],
+  autoplay: false,
+  easing: "linear",
+});
 
 let gearLeftAni = anime({
   targets: ".gear_left_ani",
@@ -763,6 +784,8 @@ window.onscroll = function (e) {
   customHeadAni.play()
   workDescriptionLineAni.play()
 
+  finalCircleAni.seek(window.pageYOffset * 0.1);
+  finalSmallCircleAni.seek(window.pageYOffset * 0.1);
   gearLeftAni.seek(window.pageYOffset * 0.1);
   gearRightAni.seek(window.pageYOffset * 0.1);
   smallGearLeftAni.seek(window.pageYOffset * 0.1);
