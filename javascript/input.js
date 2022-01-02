@@ -10,6 +10,25 @@ let openingLoadingAni = anime({
   autoplay: false
 });
 
+let openingContentAni = anime({
+  targets: ".opening-content",
+  easing: "easeInOutSine",
+  scale: ["0.85", "0.9"],
+  duration: 2000,
+  autoplay: false,
+  delay: 0
+});
+
+let openingBackgroundAni = anime({
+  targets: ".grid_background",
+  easing: "easeInOutSine",
+  scale: ["0.9", "1"],
+  duration: 2200,
+  autoplay: false,
+  delay: 1000
+});
+
+
 let openinglineAni = anime({
   targets: ".opening-line",
   clipPath: ["polygon(0 0, 100% 0, 100% 0, 0 0)", " polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
@@ -167,9 +186,11 @@ let openingLogo3Ani = anime({
 window.onload = function (e) {
   openingLoadingAni.play()
   openinglineAni.play()
+  openingContentAni.play()
   openingDetailAni.start()
   openingHeadAni.play()
   openingMainAni.play()
+  openingBackgroundAni.play()
   start1Ani.play()
   start2Ani.play()
   start3Ani.play()
