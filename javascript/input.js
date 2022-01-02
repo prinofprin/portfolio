@@ -2,11 +2,11 @@
 let openingLoadingAni = anime({
   targets: ".opening-loading",
   keyframes: [
-    { translateY: 0, opacity: 1},
-    { translateY: 1000, opacity: 0},
+    { translateX: 0, opacity: 1},
+    { translateX: 1000, opacity: 0},
   ],
   easing: "easeInOutSine",
-  duration: 200,
+  duration: 0,
   autoplay: false
 });
 
@@ -16,7 +16,7 @@ let openinglineAni = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 200
+  delay: 0
 });
 
 let openingHeadAni = anime({
@@ -30,7 +30,7 @@ let openingHeadAni = anime({
     { backgroundColor: "rgba(255, 255, 255, 0)" },
   ],
   easing: "easeInOutSine",
-  delay: 500,
+  delay: 200,
   duration: 400,
   autoplay: false
 });
