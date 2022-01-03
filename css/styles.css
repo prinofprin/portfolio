@@ -91,8 +91,40 @@ html {
     scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 1024px) {
+    p {
+        margin-bottom: 0.23rem;
+    }
+
+    
+    body {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 6.26rem;
+    }
+    
+    h3 {
+        font-size: 4.2rem;
+    }
+    
+    h5 {
+        font-size: 2.42rem;
+    }
+    
+    h6 {
+        font-size: 2.42rem;
+        margin-bottom: 0rem;
+    }
+    
+  }
+
 /* opening */
-/*1150*/
 
 .opening-loading_text{
     font-weight: 300;
@@ -661,7 +693,7 @@ p {
     position: absolute;
     left: 0; 
     right: 0;
-    top: -250px;
+    top: -25rem;
     opacity: 0.8;
     height: 50rem;
     width: 50rem;
@@ -796,7 +828,7 @@ p {
     background-color: var(--color-accent-secondary);
     opacity: 0.4;
     height: 4px;
-    width: 1200px;
+    width: 120rem;
 }
 
 .profile-language {
@@ -1064,15 +1096,15 @@ p {
     position: absolute;
     left: 0; 
     right: 0;
-    top: -654px;
+    top: -65.4rem;
     opacity: 0.7;
-    height: 750px;
-    width: 750px;
+    height: 75rem;
+    width: 75rem;
 }
 
 .section_clock_image{
-    height: 750px;
-    width: 750px;
+    height: 75rem;
+    width: 75rem;
     z-index: 0;  
 }
 
@@ -1083,15 +1115,15 @@ p {
     position: absolute;
     left: 0; 
     right: 0;
-    top: -675px;
+    top: -67.5rem;
     opacity: 1;
-    height: 820px;
-    width: 820px;
+    height: 82rem;
+    width: 82rem;
 }
 
 .section_ฺbig_clock_hand_image{
-    height: 820px;
-    width: 820px;
+    height: 82rem;
+    width: 82rem;
     z-index: 2;   
 }
 
@@ -1102,15 +1134,15 @@ p {
     position: absolute;
     left: 0; 
     right: 0;
-    top: -805px;
+    top: -805rem;
     opacity: 0.8;
-    height: 900px;
-    width: 900px;
+    height: 90rem;
+    width: 90rem;
 }
 
 .section_ฺsmall_clock_hand_image{
-    height: 900px;
-    width: 900px;
+    height: 90rem;
+    width: 90rem;
     z-index: 1;   
 }
 
@@ -1187,7 +1219,6 @@ p {
 .work-description_line{
     background-color: white;
     width: 4px;
-    
     margin-top: 1.5rem;
     margin-right: 3rem;
     margin-left: 0.7rem;
@@ -1233,8 +1264,6 @@ p {
 .work_border_line1{
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
-
-
 
 .work_image_container{
     grid-area: "image";
@@ -1308,7 +1337,6 @@ p {
 
 .work1_image_position{
     top: -16rem;
-    right: 6rem;
 }
 
 .work1_image_scale{
@@ -1318,13 +1346,6 @@ p {
 
 .work2_image_position{
     top: -14rem;
-    right: 6rem;
-}
-
-    
-.work3_image_position{
-    right: -20rem;
-    top: -5rem;
 }
 
 .work3_image_scale{
