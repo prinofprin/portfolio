@@ -2,8 +2,8 @@
 let openingLoadingAni = anime({
   targets: ".opening-loading",
   keyframes: [
-    { translateX: 0, opacity: 1},
-    { translateX: 1000, opacity: 0},
+    { translateX: 0, opacity: 1 },
+    { translateX: 1000, opacity: 0 },
   ],
   easing: "easeInOutSine",
   duration: 100,
@@ -13,7 +13,7 @@ let openingLoadingAni = anime({
 let openingContentAni = anime({
   targets: ".opening-content",
   easing: "easeInOutSine",
-  scale: ["0.85", "0.9"],
+  scale: ["0.94", "1"],
   duration: 2000,
   autoplay: false,
   delay: 0
@@ -41,7 +41,7 @@ let openinglineAni = anime({
 let openingHeadAni = anime({
   targets: ".opening-head",
   clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
-    keyframes: [
+  keyframes: [
     { backgroundColor: "rgba(255, 255, 255, 1)" },
     { backgroundColor: "rgba(255, 255, 255, 1)" },
     { backgroundColor: "rgba(255, 255, 255, 1)" },
@@ -54,7 +54,7 @@ let openingHeadAni = anime({
   autoplay: false
 });
 
-let openingDetailAni = new ShuffleText(document.getElementById("opening-detail")); 
+let openingDetailAni = new ShuffleText(document.getElementById("opening-detail"));
 
 let openingMainAni = anime({
   targets: ".opening",
@@ -65,13 +65,13 @@ let openingMainAni = anime({
   delay: 1100
 });
 
-let openingDelay=1000;
+let openingDelay = 1000;
 
 //open animation
 let start1Ani = anime({
   targets: ".start1_ani",
   clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
-    keyframes: [
+  keyframes: [
     { backgroundColor: "rgba(73, 73, 72, 1)" },
     { backgroundColor: "rgba(73, 73, 72, 1)" },
     { backgroundColor: "rgba(73, 73, 72, 1)" },
@@ -81,13 +81,13 @@ let start1Ani = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 200+openingDelay
+  delay: 200 + openingDelay
 });
 
 let start2Ani = anime({
   targets: ".start2_ani",
   clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
-    keyframes: [
+  keyframes: [
     { backgroundColor: "rgba(27, 27, 27, 1)" },
     { backgroundColor: "rgba(27, 27, 27, 1)" },
     { backgroundColor: "rgba(27, 27, 27, 1)" },
@@ -97,90 +97,90 @@ let start2Ani = anime({
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 350+openingDelay
+  delay: 350 + openingDelay
 });
 
 let start3Ani = anime({
   targets: ".start3_ani",
-  opacity: ["0","1"],
-  translateX: ["90","0"],
+  opacity: ["0", "1"],
+  translateX: ["90", "0"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 900+openingDelay
+  delay: 900 + openingDelay
 });
 
 let start4Ani = anime({
   targets: ".start4_ani",
-  opacity: ["0","1"],
-  translateX: ["-90","0"],
+  opacity: ["0", "1"],
+  translateX: ["-90", "0"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 1100+openingDelay
+  delay: 1100 + openingDelay
 });
 
 let start5Ani = anime({
   targets: ".start5_ani",
-  opacity: ["0","1"],
-  scale: ["3","1"],
+  opacity: ["0", "1"],
+  scale: ["3", "1"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 300+openingDelay
+  delay: 300 + openingDelay
 });
 
 let start6Ani = anime({
   targets: ".start6_ani",
-  opacity: ["0","1"],
-  scale: ["4","1"],
+  opacity: ["0", "1"],
+  scale: ["4", "1"],
   easing: "easeInOutSine",
   duration: 700,
   autoplay: false,
-  delay: 600+openingDelay
+  delay: 600 + openingDelay
 });
 
 let start7Ani = anime({
   targets: ".start7_ani",
   clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
-    keyframes: [
+  keyframes: [
     { opacity: "0" },
     { opacity: "1" },
   ],
   easing: "easeInOutSine",
   duration: 400,
   autoplay: false,
-  delay: 900+openingDelay
+  delay: 900 + openingDelay
 });
 
 let openingLogo1Ani = anime({
   targets: ".opening_logo1_ani",
   opacity: ["0", "1"],
-  scale: ["1.9","1"],
+  scale: ["1.9", "1"],
   easing: "easeInOutSine",
   duration: 200,
   autoplay: false,
-  delay: 1600+openingDelay
+  delay: 1600 + openingDelay
 });
 
 let openingLogo2Ani = anime({
   targets: ".opening_logo2_ani",
   opacity: ["0", "1"],
-  scale: ["1.9","1"],
+  scale: ["1.9", "1"],
   easing: "easeInOutSine",
   duration: 200,
   autoplay: false,
-  delay: 1200+openingDelay
+  delay: 1200 + openingDelay
 });
 
 let openingLogo3Ani = anime({
   targets: ".opening_logo3_ani",
   opacity: ["0", "1"],
-  scale: ["1.9","1"],
+  scale: ["1.9", "1"],
   easing: "easeInOutSine",
   duration: 200,
   autoplay: false,
-  delay: 1800+openingDelay
+  delay: 1800 + openingDelay
 });
 
 window.onload = function (e) {
@@ -201,6 +201,7 @@ window.onload = function (e) {
   openingLogo1Ani.play()
   openingLogo2Ani.play()
   openingLogo3Ani.play()
+  typingSeekJob();
 }
 
 //type animation
@@ -231,7 +232,7 @@ function typingSeekJob() {
     .start();
 }
 
-typingSeekJob();
+
 
 
 // change university logo img to color when hover
@@ -438,6 +439,20 @@ let profiledDetailAni = anime({
   autoplay: false
 });
 
+let profiledTopicAni = anime({
+  targets: ".profile-topic_ani",
+  easing: "easeInOutSine",
+  clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
+  keyframes: [
+    { backgroundColor: "rgba(35, 33, 33, 1)" },
+    { backgroundColor: "rgba(35, 33, 33, 1)" },
+    { backgroundColor: "rgba(35, 33, 33, 0)" },
+    { backgroundColor: "rgba(35, 33, 33, 0)" },
+    { backgroundColor: "rgba(35, 33, 33, 0)" }
+  ],
+  delay: 200,
+  autoplay: false
+});
 
 //clock hand
 let clockAni = anime({
@@ -625,6 +640,25 @@ let customHeadAni = anime({
   autoplay: false
 });
 
+let projectLinkAni = anime({
+  targets: ".project_link_ani",
+  clipPath: ["Polygon(0 0, 100% 0, 100% 0, 0 0)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
+  keyframes: [
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 1)" },
+    { backgroundColor: "rgba(255, 255, 255, 0)" },
+    { backgroundColor: "rgba(255, 255, 255, 0)" },
+    { backgroundColor: "rgba(255, 255, 255, 0)" },
+  ],
+
+  easing: "easeInOutSine",
+  duration: 600,
+  autoplay: false
+});
+
 
 
 let workDescriptionLineAni = anime({
@@ -783,6 +817,7 @@ window.onscroll = function (e) {
 
   profileLineAni.seek(window.pageYOffset * 0.85);
   profiledDetailAni.seek(window.pageYOffset * 0.98);
+  profiledTopicAni.seek(window.pageYOffset * 0.85);
 
   clockAni.seek((window.pageYOffset * 0.34) - 50);
   SmallClockAni.seek((window.pageYOffset * 0.34) - 50);
@@ -805,6 +840,7 @@ window.onscroll = function (e) {
 
   customAni.play()
   customHeadAni.play()
+  projectLinkAni.play()
   workDescriptionLineAni.play()
 
   finalCircleAni.seek(window.pageYOffset * 0.1);
