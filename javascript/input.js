@@ -454,6 +454,17 @@ let profiledTopicAni = anime({
   autoplay: false
 });
 
+let profileContainerAni = anime({
+  targets: ".profile-container_ani",
+  easing: "easeInOutSine",
+  keyframes: [
+    { translateY: -40 },
+    { translateY: 80 },
+  ],
+  delay: 0,
+  autoplay: false
+});
+
 //clock hand
 let clockAni = anime({
   targets: ".section_clock_image",
@@ -773,6 +784,17 @@ let circleCropAni = anime({
   autoplay: false,
 });
 
+let referenceImgeDeorationCropAni = anime({
+  targets: ".reference_imge_deoration_crop_ani",
+  easing: "easeInOutSine",
+  keyframes: [
+    { clipPath: "circle(-1000% at 50% 50%)", opacity: "-8" },
+    { clipPath: "circle(100% at 50% 50%)", opacity: "1" },
+  ],
+  autoplay: false,
+  delay: 2
+});
+
 let envolopAni = anime({
   targets: ".envolop_ani",
   translateY: ["0", "40"],
@@ -817,7 +839,8 @@ window.onscroll = function (e) {
 
   profileLineAni.seek(window.pageYOffset * 0.85);
   profiledDetailAni.seek(window.pageYOffset * 0.98);
-  profiledTopicAni.seek(window.pageYOffset * 0.85);
+  profiledTopicAni.seek(window.pageYOffset * 0.8);
+  profileContainerAni.seek(window.pageYOffset * 0.8);
 
   clockAni.seek((window.pageYOffset * 0.34) - 50);
   SmallClockAni.seek((window.pageYOffset * 0.34) - 50);
@@ -852,6 +875,7 @@ window.onscroll = function (e) {
   doorLeftAni.seek(window.pageYOffset * 0.08);
   doorRightAni.seek(window.pageYOffset * 0.08);
 
+  referenceImgeDeorationCropAni.seek(window.pageYOffset * 0.1);
   circleCropAni.seek(window.pageYOffset * 0.1);
   paperAni.seek(window.pageYOffset * 0.097);
   footerArrowAni.seek(window.pageYOffset * 0.097);

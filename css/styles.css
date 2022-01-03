@@ -663,13 +663,13 @@ p {
     right: 0;
     top: -250px;
     opacity: 0.8;
-    height: 500px;
-    width: 500px;
+    height: 50rem;
+    width: 50rem;
 }
 
 .section_big_circle_image{
-    height: 500px;
-    width: 500px;
+    height: 50rem;
+    width: 50rem;
 }
 
 .section_small_cirle_crop{
@@ -679,15 +679,15 @@ p {
     position: absolute;
     left: 0; 
     right: 0;
-    top: -165px;
+    top: -16.5rem;
     opacity: 0.7;
-    height: 330px;
-    width: 330px;
+    height: 33rem;
+    width: 33rem;
 }
 
 .section_small_circle_image{
-    height: 330px;
-    width: 330px;
+    height: 33rem;
+    width: 33rem;
 }
 
 /* Section Transition */
@@ -714,18 +714,18 @@ p {
 }
 
 .width_container_white {
-    max-width: 1220px;
+    max-width: 122rem;
     margin: 0 auto;
     background-color: white;
 }
 
 .width_container {
-    max-width: 1350px;
+    max-width: 135rem;
     margin: 0 auto;
 }
 
 .width_container_wide {
-    max-width: 1290px;
+    max-width: 129rem;
     margin: 0 auto;
 }
 
@@ -1563,6 +1563,15 @@ p {
 
 .reference_email{
     font-weight: 0;
+}
+
+.reference_imge_deoration_position{
+    position: absolute;
+    margin-top: 5rem;
+}
+
+.reference_img_decoration{
+    width: 16rem;
 }
 
 .final_section h3{
