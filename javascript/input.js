@@ -422,9 +422,13 @@ let profileHeadAni = anime({
 });
 
 let profileLineAni = anime({
-  targets: ".profile-line",
+  targets: ".profile-line_ani",
   easing: "easeInOutSine",
-  keyframes: [{ width: 0 }, { width: 0 }, { width: 1150 }],
+  keyframes: [
+    { clipPath: "Polygon(0 0, 0 0, 0 99%, 0 100%)" },
+    { clipPath: "Polygon(0 0, 0 0, 0 99%, 0 100%)" },
+    { clipPath: "Polygon(0 0, 100% 0, 100% 100%, 0 100%)" },
+  ],
   autoplay: false
 });
 
