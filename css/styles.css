@@ -36,7 +36,7 @@ body{
     font-family: 'Heebo', sans-serif;
     color: var(--color-secondary);
     font-size: 2rem;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 b {
@@ -1965,10 +1965,6 @@ p {
 
     .section-transition2{
         height: 45rem;
-    }
-
-    .personal_project_transition{
-        height: 0rem;
     }
 
      /*work 600px*/

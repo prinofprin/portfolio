@@ -22,7 +22,7 @@ let openingContentAni = anime({
 let openingBackgroundAni = anime({
   targets: ".grid_background",
   easing: "easeInOutSine",
-
+  scale: ["0.9", "1"],
   duration: 2200,
   autoplay: false,
   delay: 1000
