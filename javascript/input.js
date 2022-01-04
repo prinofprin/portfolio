@@ -194,7 +194,7 @@ let openingLogo4Ani = anime({
   delay: 1400 + openingDelay
 });
 
-
+/*
 window.onload = function (e) {
   openingLoadingAni.play()
   openinglineAni.play()
@@ -216,6 +216,7 @@ window.onload = function (e) {
   openingLogo4Ani.play()
   typingSeekJob();
 }
+*/
 
 //type animation
 function typingSeekJob() {
