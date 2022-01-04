@@ -37,6 +37,10 @@ body{
     color: var(--color-secondary);
     font-size: 2rem;
     overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 
 b {
