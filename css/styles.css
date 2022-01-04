@@ -866,7 +866,7 @@ p {
     grid-template-rows: auto auto auto;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
-    "techskillhead techskillhead ." 
+    "techskillhead techskillhead techskillhead" 
     "proficient workable useable"
     "proficientlogo workablelogo useablelogo";
     margin-top: 3rem;
@@ -1832,7 +1832,7 @@ p {
     }
 
     .profile-detail{
-        font-size: 0;
+        display: none;
     }
 
     .language_description{
@@ -2032,7 +2032,6 @@ p {
     
     /*profile 500px*/
     .profile-head_grid {
-        display: grid;
         grid-template-rows: auto auto auto auto auto auto auto auto;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -2048,12 +2047,96 @@ p {
         align-items: flex-end;
     }
 
+    .tech_skill_grid {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas: 
+        "techskillheadmobile techskillheadmobile techskillheadmobile" 
+        "proficient workable useable"
+        "proficientlogo workablelogo useablelogo";  
+        margin-top: 2rem;
+    }
 
-    
+
     .tech_head{
-        grid-area: techskillhead;
+        grid-area: techskillheadmobile;
     }
     
+    /* Section clock 500px */
+
+    .section_clock_crop{
+        top: -52.32rem;
+        height: 60rem;
+        width: 60rem;
+    }
+
+    .section_clock_image{
+        height: 60rem;
+        width: 60rem; 
+    }
+
+    .section_ฺbig_clock_hand_crop{
+        left: 0; 
+        right: 0;
+        top: -54rem;
+        height: 65.6rem;
+        width: 65.6rem;
+    }
+
+    .section_ฺbig_clock_hand_image{
+        height: 65.6rem;
+        width: 65.6rem;
+    }
+
+    .section_ฺsmall_clock_hand_crop{
+        left: 0; 
+        right: 0;
+        top: -644rem;
+        height: 72rem;
+        width: 72rem;
+    }
+
+    .section_ฺsmall_clock_hand_image{
+        height: 72rem;
+        width: 72rem;   
+    }
+    /*work 500px*/
+    .work_grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "imagediscription"
+        "image"
+        "imagedecoration";
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+    } 
+
+    .work_image_decoration_mobile_hidden{
+        display: none;
+    }
+
+    .work1_image_scale{
+        width: 50vw;
+    }
+    
+    
+    .work3_image_scale{
+        width: 70vw;
+    }
+
+    
+    .work1_image_position{
+        top: -20rem;
+    }
+
+    .work2_image_position{
+        top: -32rem;
+    }
+
 
     /* footer 500px*/
     .footer_logo_address{
