@@ -866,7 +866,7 @@ p {
     grid-template-rows: auto auto auto;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
-    "techskillhead . ." 
+    "techskillhead techskillhead ." 
     "proficient workable useable"
     "proficientlogo workablelogo useablelogo";
     margin-top: 3rem;
