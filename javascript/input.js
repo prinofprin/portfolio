@@ -2,11 +2,11 @@
 let openingLoadingAni = anime({
   targets: ".opening-loading",
   keyframes: [
-    { translateX: 0, opacity: 1 },
-    { translateX: 1000, opacity: 0 },
+    { opacity: 1 },
+    { opacity: 0 },
   ],
   easing: "easeInOutSine",
-  duration: 100,
+  duration: 0,
   autoplay: false
 });
 
@@ -194,7 +194,7 @@ let openingLogo4Ani = anime({
   delay: 1400 + openingDelay
 });
 
-/*
+
 window.onload = function (e) {
   openingLoadingAni.play()
   openinglineAni.play()
@@ -216,7 +216,6 @@ window.onload = function (e) {
   openingLogo4Ani.play()
   typingSeekJob();
 }
-*/
 
 //type animation
 function typingSeekJob() {

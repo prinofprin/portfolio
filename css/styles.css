@@ -39,14 +39,6 @@ body{
     overflow-x: hidden;
 }
 
-body {
-    overflow-x: hidden !important;
-}
-.container {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
-
 b {
     font-weight: 550;
 }
