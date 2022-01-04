@@ -160,6 +160,12 @@ html {
     }
 }
 
+@media screen and (min-width: 500px) {
+    .hidden_big_mobile_view{
+        display: none;
+    }
+}
+
 /* button */
 .button :hover{
     cursor: pointer;
@@ -2053,16 +2059,20 @@ p {
         display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: 33% 33% 33%;
-        grid-template-areas: 
-        "techskillheadmobile techskillheadmobile techskillheadmobile" 
+        grid-template-areas:
+        " 1 1 1"
         "proficient workable useable"
         "proficientlogo workablelogo useablelogo";  
-        margin-top: 2rem;
+        margin-top: 0;
     }
 
 
     .tech_head{
-        grid-area: techskillheadmobile;
+        display: none;
+    }
+
+    .profile-topic_small_mobile{
+        margin-top: 3rem;
     }
     
     /* Section clock 500px */
