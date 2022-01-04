@@ -1793,44 +1793,52 @@ p {
 
     }
 
+    /*
+    .hero-logo{
+        display: none;
+    }
+
+    .hero-logo-description{
+        display: none;
+    }
+    */
+
+    .hero-swu_logo{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .hero-yfu_logo{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
     .hero_profile{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .hero_work{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .hero_contact{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .hero_mouse{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .small_circle{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .big_circle{
-        width: 0px;
-        height: 0px;
-    }
-
-    .hero-logo{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .contact{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     /*profile 1200px*/
@@ -1844,24 +1852,20 @@ p {
     }
 
     .language_description{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .education-certificate_images{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     /*work 1200px*/
     .work-head_details{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .work-line{
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .work1_image_background{
