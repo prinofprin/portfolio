@@ -183,6 +183,18 @@ let openingLogo3Ani = anime({
   delay: 1800 + openingDelay
 });
 
+
+let openingLogo4Ani = anime({
+  targets: ".opening_logo4_ani",
+  opacity: ["0", "1"],
+  scale: ["1.9", "1"],
+  easing: "easeInOutSine",
+  duration: 200,
+  autoplay: false,
+  delay: 1400 + openingDelay
+});
+
+
 window.onload = function (e) {
   openingLoadingAni.play()
   openinglineAni.play()
@@ -201,6 +213,7 @@ window.onload = function (e) {
   openingLogo1Ani.play()
   openingLogo2Ani.play()
   openingLogo3Ani.play()
+  openingLogo4Ani.play()
   typingSeekJob();
 }
 
@@ -1008,4 +1021,4 @@ for (const el of document.querySelectorAll('.shuffle')) {
   shuffle(el);
 }
 
-//test
+//function run when specific screen size

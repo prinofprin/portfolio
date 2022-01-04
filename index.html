@@ -54,10 +54,10 @@
     </div>
     <section class="top_section grid_background" id="main_page">
     </section>
-    <section class="device_notifying">
-        <div class="device_notifying container">
-            <h6>- The portfolio is open in mobile mode -</h6>
-            <p>Please visit this site on destop or laptop for full details and funtionality.</p>
+    <section class="device_notifying hidden_destop_view">
+        <div class="device_notifying device_notifying_container hidden_destop_view">
+            <h6 class="hidden_small_mobile_view">- This portfolio is opened in mobile mode -</h6>
+            <p>Please visit the site on destop or laptop for full details and funtionality.</p>
         </div>
     </section>
     <section class="hero size_container grid_background">
@@ -67,8 +67,7 @@
                     <div class="hero-logo hero-yfu_logo-rotate">
                         <div class="opening_logo1_ani">
                             <a href="https://www.yfuth.learning-inter.org/" target="_blank">
-                                <img class="hero-yfu_hover_color" data-aos="flip-right" data-aos-duration="500"
-                                    data-aos-delay="500" src="images/decorations/hero-yfu.svg" alt="yfu logo">
+                                <img class="hero-yfu_hover_color" src="images/decorations/hero-yfu.svg" alt="yfu logo">
                             </a>
                         </div>
                     </div>
@@ -82,8 +81,8 @@
                     <div class="hero-logo hero-meiji_logo-rotate">
                         <div class="opening_logo1_ani">
                             <a href="https://www.meiji.ac.jp/cip/english/" target="_blank">
-                                <img class="hero-meiji_hover_color" data-aos="flip-right" data-aos-duration="500"
-                                    data-aos-delay="300" src="images/decorations/hero-meiji.svg" alt="meiji logo">
+                                <img class="hero-meiji_hover_color" src="images/decorations/hero-meiji.svg"
+                                    alt="meiji logo">
                             </a>
                         </div>
                     </div>
@@ -97,8 +96,8 @@
                     <div class="hero-logo hero-rikyo_logo-rotate">
                         <div class="opening_logo3_ani">
                             <a href="https://english.rikkyo.ac.jp/" target="_blank">
-                                <img class="hero-rikyo_hover_color" data-aos="flip-right" data-aos-duration="500"
-                                    data-aos-delay="400" src="images/decorations/hero-rikyo.svg" alt="rikyo logo">
+                                <img class="hero-rikyo_hover_color" src="images/decorations/hero-rikyo.svg"
+                                    alt="rikyo logo">
                             </a>
                         </div>
                     </div>
@@ -112,8 +111,8 @@
                     <div class="hero-logo hero-swu_bas_logo-rotate">
                         <div class="opening_logo2_ani">
                             <a href="https://bas.swu.ac.th/home_new_final" target="_blank">
-                                <img class="hero-swu_bas_hover_color" data-aos="flip-right" data-aos-duration="500"
-                                    data-aos-delay="200" src="images/decorations/hero-swu_bas.svg" alt="swu bas logo">
+                                <img class="hero-swu_bas_hover_color" src="images/decorations/hero-swu_bas.svg"
+                                    alt="swu bas logo">
                             </a>
                         </div>
                     </div>
@@ -125,10 +124,9 @@
                 </div>
                 <div class="hero-swu_logo hover_circle_transformation">
                     <div class="hero-logo hero-swu_logo-rotate">
-                        <div class="opening_logo2_ani">
+                        <div class="opening_logo4_ani">
                             <a href="https://www.swu.ac.th/" target="_blank">
-                                <img class="hero-swu_hover_color" data-aos="flip-right" data-aos-duration="500"
-                                    data-aos-delay="600" src="images/decorations/hero-swu.svg"
+                                <img class="hero-swu_hover_color" src="images/decorations/hero-swu.svg"
                                     alt="srinakharinwirot university logo">
                             </a>
                         </div>
@@ -181,6 +179,17 @@
             <img class="corner top_right_corner" src="images/decorations/corner.svg" alt="">
             //-->
         </div>
+        <div class="hidden_destop_view mobile_contact_btn_container">
+            <a href="#contact" class="mobile_contact_btn mobile_btn">
+                <h3 class="hover_highlight_effect">Contact</h3>
+            </a>
+
+            <a href="images/decorations/thanawat_riencharoen_resume_2021.pdf" class="mobile_resume_btn mobile_btn">
+                <h3 class="hover_highlight_effect">Resume</h3>
+            </a>
+
+        </div>
+
         <div class="contact">
             <div class="email contact_height start3_ani">
                 <div class="email_image contact_image_size "></div>
@@ -808,7 +817,7 @@
                             </a>
                             <div class="work-content">
 
-                                <div class="work_description_line_ani work-description_line line_height1"></div>
+                                <div class="work_description_line_ani work-description_line line_height3"></div>
 
                                 <div class="work-lower_content">
                                     <div class="work_description_body custom_ani">
@@ -868,12 +877,19 @@
         </div>
         <div class="fianl_transition_1"></div>
         <div class="reference_container flex_column">
-            <div class="circle_crop_ani">
+            <div class="circle_crop_ani hidden_mobile_view">
                 <img class="reference_img" src="images/decorations/reference_person.webp" alt="image of dr.Thitinan">
             </div>
-            <div class="reference_imge_deoration_position reference_imge_deoration_crop_ani">
+            <div class="reference_imge_deoration_position reference_imge_deoration_crop_ani hidden_mobile_view">
                 <img class="reference_img_decoration" src="images/decorations/reference_img_decoration.svg" alt="">
             </div>
+            <div class="hidden_destop_view">
+                <img class="reference_img" src="images/decorations/reference_person.webp" alt="image of dr.Thitinan">
+            </div>
+            <div class="reference_imge_deoration_position hidden_destop_view">
+                <img class="reference_img_decoration" src="images/decorations/reference_img_decoration.svg" alt="">
+            </div>
+
             <h6 class="z_index_10">Reference</h6>
             <div class="reference_name_details flex_column z_index_10">
                 <p>Associate Professor Dr.Thitinan Chankoson</p>
@@ -895,22 +911,26 @@
                     <h3 class="footer-hover_ani">Contact Me</h3>
                 </a>
                 <p class="shuffle">prinofprin@gmail.com</p>
-                <a href="#main_page" class="footer-hover_ani magic-hover magic-pointer__overlay">
+                <a href="#main_page" class="footer-hover_ani magic-hover magic-pointer__overlay hidden_mobile_view">
                     <img class="footer-arrow footer-arrow_ani" src="images/decorations/up_arrow.svg" alt="">
+                </a>
+                <a href="#main_page" class="hidden_destop_view footer-hover_ani magic-hover magic-pointer__overlay">
+                    <img class="footer-arrow" src="images/decorations/up_arrow.svg" alt="">
                 </a>
             </div>
         </div>
         <div class="fianl_transition_2"></div>
         <div class="footer-decoration_line"></div>
         <div class="footer_container">
-            <div class="footer_square"></div>
-            <p class="footer_tel">Tel: 084-638-2002</p>
-            <div class="footer_square"></div>
-            <p class="footer_address">Home: Vipavadee Rangsit, Jatujak, Bangkok </p>
-            <div class="footer_square"></div>
-            <p class="footer_line">Line: prinofprin</p>
+            <img class="footer_logo" src="images/decorations/footer-tel.svg" alt="">
+            <p class="footer_tel">084-638-2002</p>
+            <img class="footer_logo footer_logo_address" src="images/decorations/footer-location.svg" alt="">
+            <p class="footer_address">Vipavadee Rangsit, Jatujak, Bangkok </p>
+            <img class="footer_logo footer_logo_line" src="images/decorations/footer-line.svg" alt="">
+            <p class="footer_line">prinofprin</p>
         </div>
     </section>
+
 
     <script type="text/javascript">
         options = {
