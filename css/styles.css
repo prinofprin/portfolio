@@ -215,6 +215,8 @@ html {
     align-items: flex-end;
 }
 
+
+
 .hero_second_grid{
     grid-area: maingridcenter;
     display: grid;
@@ -1068,7 +1070,7 @@ p {
 /* Section clock */
 .section-clock{
     position: relative;
-
+    overflow-x: hidden;
 }
 
 .section_clock_crop{
@@ -1176,6 +1178,13 @@ p {
 
 
 .work_description{
+    grid-area: "imagediscription";
+    height: 50rem;
+    margin-bottom: 17rem;
+    margin-top: 12rem;
+}
+
+.project_description{
     grid-area: "imagediscription";
     height: 50rem;
     margin-bottom: 17rem;
@@ -1813,6 +1822,21 @@ p {
         margin-bottom: 0;
     }
 
+    .hero-meiji_logo{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .hero-rikyo_logo{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .hero-swu_bas_logo{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
     .hero_profile{
         display: none;
     }
@@ -1827,6 +1851,13 @@ p {
 
     .hero_mouse{
         display: none;
+    }
+
+    .hero_mouse{
+        width: 0;
+        height: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .small_circle{
@@ -2037,6 +2068,12 @@ p {
     .mobile_resume_btn{
         margin-top: 3rem;
     }
+    /*work 500px*/
+    .mobile_hero_name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     /*profile 500px*/
     .profile-head_grid {
@@ -2078,40 +2115,40 @@ p {
     /* Section clock 500px */
 
     .section_clock_crop{
-        top: -52.32rem;
-        height: 60rem;
-        width: 60rem;
+        top: -26.16rem;
+        height: 30rem;
+        width: 30rem;
     }
 
     .section_clock_image{
-        height: 60rem;
-        width: 60rem; 
+        height: 30rem;
+        width: 30rem; 
     }
 
     .section_ฺbig_clock_hand_crop{
         left: 0; 
         right: 0;
-        top: -54rem;
-        height: 65.6rem;
-        width: 65.6rem;
+        top: -27rem;
+        height: 32.8rem;
+        width: 32.8rem;
     }
 
     .section_ฺbig_clock_hand_image{
-        height: 65.6rem;
-        width: 65.6rem;
+        height: 32.8rem;
+        width: 32.8rem;
     }
 
     .section_ฺsmall_clock_hand_crop{
         left: 0; 
         right: 0;
-        top: -644rem;
-        height: 72rem;
-        width: 72rem;
+        top: -322rem;
+        height: 36rem;
+        width: 36rem;
     }
 
     .section_ฺsmall_clock_hand_image{
-        height: 72rem;
-        width: 72rem;   
+        height: 36rem;
+        width: 36rem;   
     }
     /*work 500px*/
     .work_grid{
@@ -2134,39 +2171,47 @@ p {
 
     
     .project1_image_scale{
-        height: 60vw;
-        width: 70vw;
+        height: 65vw;
+        width: 75vw;
     }
 
     .project2_image_scale{
-        height: 45vw;
-        width: 65vw;
+        height: 50vw;
+        width: 70vw;
     }
 
     .project3_image_scale{
         height: 40vw;
-        width: 70vw;
+        width: 75vw;
     }
 
     .project1_image_position{
-        right: 5vw;
-        top: 60vw;
+        right: 2vw;
+        margin-top: 22rem;
     }
     
     .project2_image_position{
         right: 5vw;
-        top: 70vw;
-    }
-    
-    .work_image_container{
-        width: 5rem;
+        margin-top: 25rem;
     }
     
     .project3_image_position{
-        right: 5vw;
-        top: 70vw;
+        right: 3vw;
+        margin-top: 25rem;
+    }
+
+    .work_image_decoration1_margin{
+        margin-top: -8rem;
     }
     
+    .work_image_decoration3_margin{
+        margin-top: -20rem;
+    }
+
+    .work_image_container{
+        width: 5rem;
+    }
+
     .work_image_decoration_mobile_hidden{
         display: none;
     }
@@ -2186,9 +2231,15 @@ p {
     }
 
     .work2_image_position{
-        top: -32rem;
+        top: -25rem;
     }
 
+    .project_description{
+        grid-area: "imagediscription";
+        height: 50rem;
+        margin-bottom: 50rem;
+        margin-top: 10rem;
+    }
 
     /* footer 500px*/
     .footer_logo_address{
@@ -2198,7 +2249,4 @@ p {
     .footer_container .footer_address{
         display: none;
     }
-
-    
-    /*1150*/
 }
