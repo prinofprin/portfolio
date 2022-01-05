@@ -130,30 +130,13 @@ let start5Ani = anime({
   delay: 400 + openingDelay
 });
 
-let start55Ani = anime({
-  targets: ".start55_ani",
-  scaleY: [ "-0.5","1", "1"],
-  easing: "easeInOutSine",
-  duration: 800,
-  autoplay: false,
-  delay: 400 + openingDelay
-});
 
 let start6Ani = anime({
   targets: ".start6_ani",
   opacity: ["0", "1"],
   scale: ["4", "1"],
   easing: "easeInOutSine",
-  duration: 800,
-  autoplay: false,
-  delay: 900 + openingDelay
-});
-
-let start66Ani = anime({
-  targets: ".start66_ani",
-  scaleX: [ "-0.9","1", "1"],
-  easing: "easeInOutSine",
-  duration: 800,
+  duration: 500,
   autoplay: false,
   delay: 900 + openingDelay
 });
@@ -213,6 +196,7 @@ let openingLogo4Ani = anime({
 });
 
 var delayInMilliseconds = 3000;
+var delayInMilliseconds2 = 1000;
 
 
 
@@ -229,18 +213,19 @@ window.onload = function (e) {
   start3Ani.play()
   start4Ani.play()
   start5Ani.play()
-  start55Ani.play()
   start6Ani.play()
-  start66Ani.play()
   start7Ani.play()
   openingLogo1Ani.play()
   openingLogo2Ani.play()
   openingLogo3Ani.play()
   openingLogo4Ani.play()
-  typingSeekJob();
+  
   setTimeout(function () {
     document.getElementById('opening').remove();
   }, delayInMilliseconds);
+  setTimeout(function () {
+    typingSeekJob();
+  }, delayInMilliseconds2);
 
 
 }
