@@ -2071,6 +2071,10 @@ p {
         display: none;
     }
 
+    .opening-content{
+        scale: 0.8;
+    }
+
     /* moble notifying 500px*/
 
 
