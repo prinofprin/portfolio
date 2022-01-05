@@ -577,7 +577,7 @@ p {
         transform: translate(0,  0px);
     } 
     50% {
-        transform: translate(-80px,  -20px);
+        transform: translate(-8rem,  -2rem);
     }
 
     100% {
@@ -590,7 +590,7 @@ p {
         transform: translate(0,  0px);
     } 
     50% {
-        transform: translate(80px,  20px);
+        transform: translate(8rem,  2rem);
     }
 
     100% {
@@ -1753,6 +1753,7 @@ p {
         flex-direction: column;
         align-items: center;
         background-color: var(--color-secondary);
+        z-index: 90;
     }
 
     .device_notifying_container{
@@ -1805,7 +1806,7 @@ p {
     /*hero 1200px*/
     .hero_main_grid{
         display: grid;
-        grid-template-rows: 20px 55rem 20px;
+        grid-template-rows: 20px 60rem 20px;
     }
 
     .hero_second_grid{
@@ -1817,42 +1818,31 @@ p {
         "name . profile" 
         "position mouse works" 
         "else . contact";
-
     }
-
-    /*
-    .hero-logo{
-        display: none;
-    }
-
-    .hero-logo-description{
-        display: none;
-    }
-    */
 
     .hero-swu_logo{
-        margin-left: 0;
-        margin-bottom: 0;
+        margin-left: 800px;
+        margin-bottom: 300px;
     }
-
+    
     .hero-yfu_logo{
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-
-    .hero-meiji_logo{
-        margin-left: 0;
-        margin-bottom: 0;
+        margin-left: 400px;
+        margin-bottom: 600px;
     }
 
     .hero-rikyo_logo{
-        margin-left: 0;
-        margin-bottom: 0;
+        margin-left: -200px;
+        margin-bottom: 480px;
+    }
+
+    .hero-meiji_logo{
+        margin-left: -600px;
+        margin-bottom: 500px;
     }
 
     .hero-swu_bas_logo{
-        margin-left: 0;
-        margin-bottom: 0;
+        margin-left: -700px;
+        margin-bottom: 100px;
     }
 
     .hero_profile{
@@ -1987,6 +1977,55 @@ p {
     }
 }
 
+/*ipad pro*/
+@media screen and (max-width: 1024px){
+    .hero_main_grid{
+        display: grid;
+        grid-template-rows: 20px 70rem 20px;
+    }
+
+    .hero-swu_logo{
+        margin-left: 800px;
+        margin-bottom: 300px;
+    }
+    
+    .hero-yfu_logo{
+        margin-left: 400px;
+        margin-bottom: 700px;
+    }
+
+    .hero-rikyo_logo{
+        margin-left: -200px;
+        margin-bottom: 520px;
+    }
+
+    .hero-meiji_logo{
+        margin-left: -600px;
+        margin-bottom: 600px;
+    }
+
+    .hero-swu_bas_logo{
+        margin-left: -750px;
+        margin-bottom: 100px;
+    }
+
+    .contact_padding {
+        height: 40rem;
+    }
+
+    .section-transition2 {
+        height: 40rem;
+    }
+
+    .fianl_transition_1 {
+        height: 40rem;
+    }
+
+    .fianl_transition_2 {
+        height: 30rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     html{
         font-size: 50%;  
@@ -2018,6 +2057,56 @@ p {
 
 }
 
+/*ipad*/
+@media screen and (max-width: 768px){
+    .hero_main_grid{
+        display: grid;
+        grid-template-rows: 20px 70rem 20px;
+    }
+
+    .hero-swu_logo{
+        margin-left: 600px;
+        margin-bottom: 400px;
+    }
+    
+    .hero-yfu_logo{
+        margin-left: 300px;
+        margin-bottom: 700px;
+    }
+
+    .hero-rikyo_logo{
+        margin-left: -120px;
+        margin-bottom: 520px;
+    }
+
+    .hero-meiji_logo{
+        margin-left: -500px;
+        margin-bottom: 600px;
+    }
+
+    .hero-swu_bas_logo{
+        margin-left: -750px;
+        margin-bottom: 100px;
+    }
+
+    .contact_padding {
+        height: 17em;
+    }
+
+    .section-transition2 {
+        height: 40rem;
+    }
+
+    .fianl_transition_1 {
+        height: 48rem;
+    }
+
+    .fianl_transition_2 {
+        height: 49rem;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
     html{
@@ -2045,7 +2134,6 @@ p {
         top: -32rem;
     }
 
-
     .project1_image_position{
         right: -3rem;
         top: -6rem;
@@ -2062,6 +2150,58 @@ p {
     }
 }
 
+/*big mobile*/
+@media screen and (max-width: 500px){
+    .hero_main_grid{
+        display: grid;
+        grid-template-rows: 20px 62rem 20px;
+    }
+
+    .hero-logo{
+        transform: scale(0.9);
+    }
+
+    .hero-swu_bas_logo{
+        display: none;
+    }
+
+    .hero-rikyo_logo{
+        display: none;
+    }
+
+    .hero-swu_logo{
+        margin-left: 350px;
+        margin-bottom: 420px;
+    }
+    
+    .hero-yfu_logo{
+        margin-left: 20px;
+        margin-bottom: 520px;
+    }
+
+    .hero-meiji_logo{
+        margin-left: -250px;
+        margin-bottom: 400px;
+    }
+
+    .contact_padding {
+        height: 10em;
+    }
+
+    .section-transition2 {
+        height: 40rem;
+    }
+
+    .fianl_transition_1 {
+        height: 42rem;
+    }
+
+    .fianl_transition_2 {
+        height: 40rem;
+    }
+}
+
+
 @media screen and (max-width: 500px) {
     html{
         font-size: 45%;  
@@ -2074,9 +2214,6 @@ p {
     .opening-content{
         scale: 0.7;
     }
-
-    /* moble notifying 500px*/
-
 
     /* mobile btn 500px*/
     .mobile_contact_btn_container{
@@ -2180,6 +2317,7 @@ p {
         height: 64.8rem;
         width: 64.8rem;   
     }
+
     /*work 500px*/
     .work_grid{
         display: grid;
@@ -2249,18 +2387,20 @@ p {
         width: 50vw;
     }
     
-    
     .work3_image_scale{
         width: 70vw;
     }
 
-    
     .work1_image_position{
-        top: -20rem;
+        top: -35rem;
     }
 
     .work2_image_position{
-        top: -25rem;
+        top: -43rem;
+    }
+
+    .work3_image_position{
+        top: -37rem;
     }
 
     .project_description{
@@ -2290,4 +2430,110 @@ p {
     .footer_container .footer_address{
         display: none;
     }
+}
+
+/*iphonex mobile*/
+@media screen and (max-width: 377px){
+    .hero_main_grid{
+        grid-template-rows: 20px 65rem 20px;
+    }
+
+    .hero-meiji_logo{
+        margin-left: -230px;
+        margin-bottom: 430px;
+    }
+
+    .hero-yfu_logo{
+        margin-left: 20px;
+        margin-bottom: 560px;
+    }
+    
+    .hero-swu_logo{
+        margin-left: 300px;
+        margin-bottom: 430px;
+    }
+
+    .contact_padding {
+        height: 20rem;
+    }
+
+    .section-transition2{
+        height: 35rem;
+    }
+
+    .work1_image_position{
+        top: -44rem;
+    }
+
+    .work2_image_position{
+        top: -50rem;
+    }
+
+    .work3_image_position{
+        top: -40rem;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translate(0,  0px);
+        } 
+        50% {
+            transform: translate(-4rem,  -2rem);
+        }
+    
+        100% {
+            transform: translate(0,  0px);
+        } 
+    }
+    
+    @keyframes floating2 {
+        0% {
+            transform: translate(0,  0px);
+        } 
+        50% {
+            transform: translate(4rem,  2rem);
+        }
+    
+        100% {
+            transform: translate(0,  0px);
+        } 
+    }
+    
+/*iphone6 mobile*/
+
+@media only screen and (min-device-width: 375px)
+  and (max-device-width: 667px){
+    .hero-logo{
+        transform: scale(0.7);
+    }
+
+    .hero_main_grid{
+        grid-template-rows: 20px 50rem 20px;
+    }
+
+    .fianl_transition_1 {
+        height: 35rem;
+    }
+
+    .fianl_transition_2 {
+        height: 30rem;
+    }
+
+    
+    .hero-meiji_logo{
+        margin-left: -300px;
+        margin-bottom: 320px;
+    }
+
+    .hero-yfu_logo{
+        margin-left: 20px;
+        margin-bottom: 400px;
+    }
+    
+    .hero-swu_logo{
+        margin-left: 350px;
+        margin-bottom: 320px;
+    }
+
+}
 }
