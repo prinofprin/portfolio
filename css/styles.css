@@ -346,7 +346,7 @@ p {
     background-repeat: no-repeat;
     height: 28rem;
     width: 28rem;
-    z-index: -99;   
+    z-index: -99;
 }
 
 .circle_transformation{
@@ -672,6 +672,7 @@ p {
 /* Section Circle */
 .section-circle{
     position: relative;
+    pointer-events: none
 
 }
 
