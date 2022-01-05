@@ -35,9 +35,16 @@ html{
 body{
     font-family: 'Heebo', sans-serif;
     color: var(--color-secondary);
-    font-size: 2rem;
-    /*overflow-x: hidden;*/
+    font-size: 2rem;   
 }
+
+html, body{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
 
 b {
     font-weight: 550;
@@ -247,13 +254,14 @@ html {
 
 .hero_position{
     grid-area: position;
-    width: 65rem;
+    width: 45rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
 .hero_position h2{
     font-weight: normal;
+    text-align: center;
 }
 
 .hero_else{
@@ -1070,7 +1078,6 @@ p {
 /* Section clock */
 .section-clock{
     position: relative;
-    overflow-x: hidden;
 }
 
 .section_clock_crop{
@@ -1178,6 +1185,13 @@ p {
 
 
 .work_description{
+    grid-area: "imagediscription";
+    height: 50rem;
+    margin-bottom: 17rem;
+    margin-top: 12rem;
+}
+
+.work1_description{
     grid-area: "imagediscription";
     height: 50rem;
     margin-bottom: 17rem;
@@ -1732,11 +1746,11 @@ p {
 
     /* moble notifying 1200px*/
     .device_notifying{
+        padding-top: 0.5rem;
+        padding-bottom: 0.25rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
         background-color: var(--color-secondary);
     }
 
@@ -1746,14 +1760,17 @@ p {
         align-items: center;
     }
 
-    .device_notifying h6{
+    .device_notifying b{
         margin-top: 0rem;
         color: var(--color-head-text);
+        text-align: center;
+        opacity: 0.9;
     }
 
     .device_notifying p{
         margin-top: 0rem;
         color: var(--color-body-text);
+        text-align: center;
     }
 
     /* mobile btn 1200px*/
@@ -1872,6 +1889,10 @@ p {
         display: none;
     }
 
+    .hero_second_grid{
+        margin-bottom: 3rem;
+    }
+
     /*profile 1200px*/
 
     .profile-line{
@@ -1891,6 +1912,10 @@ p {
     }
 
     /*work 1200px*/
+    .work1_description{
+        margin-top: 0rem;
+    }
+
     .work-head_details{
         display: none;
     }
@@ -2046,13 +2071,6 @@ p {
     }
 
     /* moble notifying 500px*/
-    .device_notifying h6{
-        text-align: center;
-    }
-
-    .device_notifying p{
-        text-align: center;
-    }
 
 
     /* mobile btn 500px*/
@@ -2068,14 +2086,20 @@ p {
     .mobile_resume_btn{
         margin-top: 3rem;
     }
-    /*work 500px*/
+
+    
+    /*profile 500px*/
     .mobile_hero_name{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    /*profile 500px*/
+
+    .mobile_hero_name h2{
+        font-weight: 100;
+    }
+
+
     .profile-head_grid {
         grid-template-rows: auto auto auto auto auto auto auto auto;
         grid-template-columns: 100%;
@@ -2115,40 +2139,40 @@ p {
     /* Section clock 500px */
 
     .section_clock_crop{
-        top: -26.16rem;
-        height: 30rem;
-        width: 30rem;
+        top: -47.2rem;
+        height: 54rem;
+        width: 54rem;
     }
 
     .section_clock_image{
-        height: 30rem;
-        width: 30rem; 
+        height: 54rem;
+        width: 54rem; 
     }
 
     .section_ฺbig_clock_hand_crop{
         left: 0; 
         right: 0;
-        top: -27rem;
-        height: 32.8rem;
-        width: 32.8rem;
+        top: -48.6rem;
+        height: 59.04rem;
+        width: 59.04rem;
     }
 
     .section_ฺbig_clock_hand_image{
-        height: 32.8rem;
-        width: 32.8rem;
+        height: 59.04rem;
+        width: 59.04rem;
     }
 
     .section_ฺsmall_clock_hand_crop{
         left: 0; 
         right: 0;
-        top: -322rem;
-        height: 36rem;
-        width: 36rem;
+        top: -579.6rem;
+        height: 64.8rem;
+        width: 64.8rem;
     }
 
     .section_ฺsmall_clock_hand_image{
-        height: 36rem;
-        width: 36rem;   
+        height: 64.8rem;
+        width: 64.8rem;   
     }
     /*work 500px*/
     .work_grid{
@@ -2168,7 +2192,6 @@ p {
         display: flex;
         flex-direction: row-reverse;
     }
-
     
     .project1_image_scale{
         height: 65vw;
@@ -2187,25 +2210,25 @@ p {
 
     .project1_image_position{
         right: 2vw;
-        margin-top: 22rem;
+        margin-top: 18rem;
     }
     
     .project2_image_position{
         right: 5vw;
-        margin-top: 25rem;
+        margin-top: 20rem;
     }
     
     .project3_image_position{
         right: 3vw;
-        margin-top: 25rem;
+        margin-top: 16rem;
     }
 
     .work_image_decoration1_margin{
-        margin-top: -8rem;
+        margin-top: -25rem;
     }
     
     .work_image_decoration3_margin{
-        margin-top: -20rem;
+        margin-top: -25rem;
     }
 
     .work_image_container{
@@ -2239,6 +2262,18 @@ p {
         height: 50rem;
         margin-bottom: 50rem;
         margin-top: 10rem;
+    }
+
+    .line_height1{
+        height: 28rem;
+    }
+    
+    .line_height2{
+        height: 30rem;
+    }
+    
+    .line_height3{
+        height: 30rem;
     }
 
     /* footer 500px*/

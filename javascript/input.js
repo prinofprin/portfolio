@@ -229,17 +229,17 @@ function typingSeekJob() {
   let pause = 1500;
 
   typewriter
-    .typeString("\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + "Design")
+    .typeString("Design")
     .pauseFor(2500)
     .deleteAll()
-    .typeString("\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + "Business")
+    .typeString("Business")
     .pauseFor(2500)
     .deleteAll()
-    .typeString("\xa0\xa0\xa0\xa0\xa0\xa0" + "UX & UI")
+    .typeString("UX & UI")
     .pauseFor(2500)
     .deleteAll()
     .pauseFor(2500)
-    .typeString("\xa0\xa0\xa0\xa0" + "Automation")
+    .typeString("Automation")
     .pauseFor(2500)
     .deleteAll()
     .start();
