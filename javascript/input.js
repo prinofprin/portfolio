@@ -123,11 +123,20 @@ let start4Ani = anime({
 let start5Ani = anime({
   targets: ".start5_ani",
   opacity: ["0", "1"],
-  scale: ["3", "1"],
+  scale: ["4", "1"],
   easing: "easeInOutSine",
-  duration: 700,
+  duration: 800,
   autoplay: false,
-  delay: 300 + openingDelay
+  delay: 400 + openingDelay
+});
+
+let start55Ani = anime({
+  targets: ".start55_ani",
+  scaleY: [ "-0.5","1", "1"],
+  easing: "easeInOutSine",
+  duration: 800,
+  autoplay: false,
+  delay: 400 + openingDelay
 });
 
 let start6Ani = anime({
@@ -135,9 +144,18 @@ let start6Ani = anime({
   opacity: ["0", "1"],
   scale: ["4", "1"],
   easing: "easeInOutSine",
-  duration: 700,
+  duration: 800,
   autoplay: false,
-  delay: 600 + openingDelay
+  delay: 900 + openingDelay
+});
+
+let start66Ani = anime({
+  targets: ".start66_ani",
+  scaleX: [ "-0.9","1", "1"],
+  easing: "easeInOutSine",
+  duration: 800,
+  autoplay: false,
+  delay: 900 + openingDelay
 });
 
 let start7Ani = anime({
@@ -150,7 +168,7 @@ let start7Ani = anime({
   easing: "easeInOutSine",
   duration: 400,
   autoplay: false,
-  delay: 900 + openingDelay
+  delay: 1200 + openingDelay
 });
 
 let openingLogo1Ani = anime({
@@ -211,7 +229,9 @@ window.onload = function (e) {
   start3Ani.play()
   start4Ani.play()
   start5Ani.play()
+  start55Ani.play()
   start6Ani.play()
+  start66Ani.play()
   start7Ani.play()
   openingLogo1Ani.play()
   openingLogo2Ani.play()
