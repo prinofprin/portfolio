@@ -16,7 +16,7 @@ let openingContentAni = anime({
   scale: ["0.94", "1"],
   duration: 2000,
   autoplay: false,
-  delay: 0
+  delay: 0,
 });
 
 let openingBackgroundAni = anime({
@@ -194,6 +194,9 @@ let openingLogo4Ani = anime({
   delay: 1400 + openingDelay
 });
 
+var delayInMilliseconds = 3000;
+
+
 
 window.onload = function (e) {
   openingLoadingAni.play()
@@ -215,6 +218,11 @@ window.onload = function (e) {
   openingLogo3Ani.play()
   openingLogo4Ani.play()
   typingSeekJob();
+  setTimeout(function () {
+    document.getElementById('opening').remove();
+  }, delayInMilliseconds);
+
+
 }
 
 //type animation
