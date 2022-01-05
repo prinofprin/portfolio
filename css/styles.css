@@ -2001,12 +2001,12 @@ p {
 
     .hero-meiji_logo{
         margin-left: -600px;
-        margin-bottom: 600px;
+        margin-bottom: 650px;
     }
 
     .hero-swu_bas_logo{
         margin-left: -750px;
-        margin-bottom: 100px;
+        margin-bottom: 300px;
     }
 
     .contact_padding {
@@ -2086,7 +2086,7 @@ p {
 
     .hero-swu_bas_logo{
         margin-left: -750px;
-        margin-bottom: 100px;
+        margin-bottom: 300px;
     }
 
     .contact_padding {
@@ -2432,6 +2432,41 @@ p {
     }
 }
 
+/*iphone6 mobile*/
+@media only screen and (min-device-width: 375px)
+  and (max-device-width: 667px){
+    .hero-logo{
+        transform: scale(0.7);
+    }
+
+    .hero_main_grid{
+        grid-template-rows: 20px 50rem 20px;
+    }
+
+    .fianl_transition_1 {
+        height: 35rem;
+    }
+
+    .fianl_transition_2 {
+        height: 30rem;
+    }
+
+    .hero-meiji_logo{
+        margin-left: -300px;
+        margin-bottom: 320px;
+    }
+
+    .hero-yfu_logo{
+        margin-left: 20px;
+        margin-bottom: 400px;
+    }
+    
+    .hero-swu_logo{
+        margin-left: 350px;
+        margin-bottom: 320px;
+    }
+}
+
 /*iphonex mobile*/
 @media screen and (max-width: 377px){
     .hero_main_grid{
@@ -2498,42 +2533,6 @@ p {
             transform: translate(0,  0px);
         } 
     }
-    
-/*iphone6 mobile*/
+} 
 
-@media only screen and (min-device-width: 375px)
-  and (max-device-width: 667px){
-    .hero-logo{
-        transform: scale(0.7);
-    }
 
-    .hero_main_grid{
-        grid-template-rows: 20px 50rem 20px;
-    }
-
-    .fianl_transition_1 {
-        height: 35rem;
-    }
-
-    .fianl_transition_2 {
-        height: 30rem;
-    }
-
-    
-    .hero-meiji_logo{
-        margin-left: -300px;
-        margin-bottom: 320px;
-    }
-
-    .hero-yfu_logo{
-        margin-left: 20px;
-        margin-bottom: 400px;
-    }
-    
-    .hero-swu_logo{
-        margin-left: 350px;
-        margin-bottom: 320px;
-    }
-
-}
-}
