@@ -28,7 +28,6 @@ let openingBackgroundAni = anime({
   delay: 1000
 });
 
-
 let openinglineAni = anime({
   targets: ".opening-line",
   clipPath: ["polygon(0 0, 100% 0, 100% 0, 0 0)", " polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
@@ -195,10 +194,36 @@ let openingLogo4Ani = anime({
   delay: 1400 + openingDelay
 });
 
+let openingResumeIconAni = anime({
+  targets: ".opening_resume_icon_ani",
+  translateX: ["+300", "0"],
+  easing: "easeInOutSine",
+  duration: 1000,
+  autoplay: false,
+  delay: 1200 + openingDelay
+});
+
+let openingResumeTitleAni = anime({
+  targets: ".opening_resume_title_ani",
+  opacity: [0, 1],
+  easing: "easeInOutSine",
+  duration: 1000,
+  autoplay: false,
+  delay: 1500 + openingDelay
+});
+
+
+
+
+
 var delayInMilliseconds = 3000;
-var delayInMilliseconds2 = 1000;
+var delayInMilliseconds2 = 2000;
+var delayInMilliseconds3 = 0;
 
-
+function scollTopFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 window.onload = function (e) {
   openingLoadingAni.play()
@@ -215,17 +240,22 @@ window.onload = function (e) {
   start5Ani.play()
   start6Ani.play()
   start7Ani.play()
+  openingResumeIconAni.play()
   openingLogo1Ani.play()
   openingLogo2Ani.play()
   openingLogo3Ani.play()
   openingLogo4Ani.play()
-  
+  openingResumeTitleAni.play()
+
   setTimeout(function () {
     document.getElementById('opening').remove();
   }, delayInMilliseconds);
   setTimeout(function () {
     typingSeekJob();
   }, delayInMilliseconds2);
+  setTimeout(function () {
+    scollTopFunction();
+  }, delayInMilliseconds3);
 
 
 }

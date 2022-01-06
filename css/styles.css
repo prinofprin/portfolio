@@ -196,6 +196,42 @@ html {
     margin: 0 auto;
 }
 
+.hero-resume_icon{
+    position: absolute;
+    cursor: pointer;
+    height: 10rem;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    transition: height 0.1s ease-in;
+}
+
+.hero-resume_icon:hover{
+    height: 12rem;
+}
+
+.resume_title{
+    position: absolute;
+    height: 11rem;
+    top: -7rem;
+    right: 14rem;
+    transition: transform 0.2s ease-in;
+    
+}
+
+.resume_degree{
+    transform: rotate(45deg);
+}
+
+.resume_title{ 
+    font-size: 3rem;
+}
+
+.resume_icon:hover ~ .resume_title{
+    transform: translate(12.5rem, 12.5rem);
+}
+
+
 .corner {
     width: 20px;
     height: 20px;
@@ -212,7 +248,7 @@ html {
 
 .hero_main_grid{
     display: grid;
-    grid-template-rows: 20px 67rem 20px;
+    grid-template-rows: 20px 73rem 20px;
     grid-template-columns: 20px 90vw 20px;
     grid-template-areas: 
     "topleftcorner . toprightcorner" 
@@ -221,8 +257,6 @@ html {
     justify-content: center;
     align-items: flex-end;
 }
-
-
 
 .hero_second_grid{
     grid-area: maingridcenter;
@@ -272,22 +306,20 @@ html {
     margin-bottom: 1rem;
 }
 
-
-
 .hero_mouse{
     grid-area: mouse;
-    width: 17rem;
-    height: 17rem;
     margin-left: 3rem;
     margin-right: 3rem;
     transition: transform 0.2s ease-in;
 }
 
-.hero_mouse:hover{
-    transform: rotate(135deg);
+.hero-mouse_img{
+    background-image: url(../images/decorations/mouse.svg);
+    background-repeat: no-repeat;
+    width: 17rem;
+    height: 17rem;
+    transition: transform 0.3s ease-in, width 0.3s ease-in, height 0.3s ease-in; 
 }
-
-
 
 .hero_profile{
     grid-area: profile;
@@ -313,6 +345,13 @@ html {
 
 .hero_profile:hover  ~ .hero_mouse{
     transform: rotate(4deg);
+}
+
+
+.resume_icon:hover ~ .hero-mouse_img{
+    transform: translate(750px, -500px);
+    width: 0;
+    height: 0;
 }
 
 .hero_contact{
@@ -516,18 +555,22 @@ p {
 
 .hero-yfu_logo:hover~ .hero_mouse{
     transform: rotate(-8deg);
+    transform: scaleX(0.9);
 }
+
 
 .hero-meiji_logo:hover~ .hero_mouse{
     transform: rotate(-110deg);
+    transform: scaleX(-1)
 }
 
 .hero-rikyo_logo:hover~ .hero_mouse{
     transform: rotate(-90deg);
+    transform: scaleX(-0.9);
 }
 
 .hero-swu_bas_logo:hover~ .hero_mouse{
-    transform: rotate(-130deg);
+    transform: rotate(-125deg);
 }
 
 .hero-swu_logo:hover~ .hero_mouse{
@@ -673,7 +716,6 @@ p {
 .section-circle{
     position: relative;
     pointer-events: none
-
 }
 
 .section_big_cirle_crop{
@@ -1079,6 +1121,7 @@ p {
 /* Section clock */
 .section-clock{
     position: relative;
+    pointer-events: none
 }
 
 .section_clock_crop{
@@ -1489,6 +1532,7 @@ p {
     margin-right: auto;
     position: relative;
     width: 1px;
+    pointer-events: none
 }
 
 .left_gear_img {
@@ -1707,6 +1751,27 @@ p {
 .footer-hover_ani:hover{
     transform: translate(0,  -5px);
 }
+
+@media screen and (max-width: 1400px) {
+    html{
+        font-size: 55%;  
+    }
+
+    .section-transition2 {
+        height: 40rem;
+    }
+
+    .project_description {
+        margin-bottom: 27rem;
+        margin-top: 22rem;
+    }
+
+    .work_description {
+        margin-bottom: 27rem;
+        margin-top: 22rem;
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
     .hidden_mobile_view{
@@ -2432,43 +2497,8 @@ p {
     }
 }
 
-/*iphone6 mobile*/
-@media only screen and (min-device-width: 375px)
-  and (max-device-width: 667px){
-    .hero-logo{
-        transform: scale(0.7);
-    }
-
-    .hero_main_grid{
-        grid-template-rows: 20px 50rem 20px;
-    }
-
-    .fianl_transition_1 {
-        height: 35rem;
-    }
-
-    .fianl_transition_2 {
-        height: 30rem;
-    }
-
-    .hero-meiji_logo{
-        margin-left: -300px;
-        margin-bottom: 320px;
-    }
-
-    .hero-yfu_logo{
-        margin-left: 20px;
-        margin-bottom: 400px;
-    }
-    
-    .hero-swu_logo{
-        margin-left: 350px;
-        margin-bottom: 320px;
-    }
-}
-
 /*iphonex mobile*/
-@media screen and (max-width: 377px){
+@media screen and (max-width: 375px){
     .hero_main_grid{
         grid-template-rows: 20px 65rem 20px;
     }
@@ -2536,3 +2566,38 @@ p {
 } 
 
 
+/*iphone6 mobile*/
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 667px) {
+    .hero-logo{
+        transform: scale(0.7);
+    }
+
+    .hero_main_grid{
+        grid-template-rows: 20px 50rem 20px;
+    }
+
+    .fianl_transition_1 {
+        height: 35rem;
+    }
+
+    .fianl_transition_2 {
+        height: 30rem;
+    }
+
+    .hero-meiji_logo{
+        margin-left: -300px;
+        margin-bottom: 320px;
+    }
+
+    .hero-yfu_logo{
+        margin-left: 20px;
+        margin-bottom: 400px;
+    }
+    
+    .hero-swu_logo{
+        margin-left: 350px;
+        margin-bottom: 320px;
+    }
+}
