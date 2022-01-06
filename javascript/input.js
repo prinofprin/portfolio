@@ -214,8 +214,6 @@ let openingResumeTitleAni = anime({
 
 
 
-
-
 var delayInMilliseconds = 3000;
 var delayInMilliseconds2 = 2000;
 var delayInMilliseconds3 = 0;
