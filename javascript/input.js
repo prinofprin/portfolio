@@ -6,7 +6,7 @@ let openingLoadingAni = anime({
     { opacity: 0 },
   ],
   easing: "easeInOutSine",
-  duration: 0,
+  duration: 100,
   autoplay: false
 });
 
