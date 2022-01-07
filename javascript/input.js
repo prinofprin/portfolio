@@ -216,7 +216,7 @@ let openingResumeTitleAni = anime({
 
 var delayInMilliseconds = 3000;
 var delayInMilliseconds2 = 2000;
-var delayInMilliseconds3 = 800;
+var delayInMilliseconds3 = 1000;
 
 function scollTopFunction() {
   document.body.scrollTop = 0; // For Safari
@@ -847,7 +847,7 @@ let finalPlane2Ani = anime({
   targets: ".final-plane2_ani",
   easing: "easeInOutSine",
   translateX: ["0", "-3500"],
-  translateY: ["200", "2000"],
+  translateY: ["0", "2500"],
   scale: ["1", "3"],
   opacity: ["0.5", "0.8"],
   scaleY: ["0.7", "1", "1", "1", "1", "1", "1"],
