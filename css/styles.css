@@ -116,6 +116,7 @@ html {
     align-items: center;
     justify-content: center;
     position: absolute;
+    z-index: 999;
 }
 
 .opening{
