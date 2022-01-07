@@ -61,7 +61,7 @@ let openingMainAni = anime({
   easing: "easeInOutSine",
   duration: 200,
   autoplay: false,
-  delay: 1100
+  delay: 1000
 });
 
 let openingDelay = 1000;
@@ -216,7 +216,7 @@ let openingResumeTitleAni = anime({
 
 var delayInMilliseconds = 3000;
 var delayInMilliseconds2 = 2000;
-var delayInMilliseconds3 = 0;
+var delayInMilliseconds3 = 800;
 
 function scollTopFunction() {
   document.body.scrollTop = 0; // For Safari
@@ -465,9 +465,6 @@ let sectionSmallCircleAni = anime({
 
 
 // profile animation
-
-
-
 let profileHeadAni = anime({
   targets: ".profile-head",
   easing: "easeInOutSine",
@@ -832,6 +829,33 @@ let doorRightAni = anime({
   easing: "linear",
 });
 
+
+//final plane animation
+let finalPlane1Ani = anime({
+  targets: ".final-plane1_ani",
+  easing: "easeInOutSine",
+  translateX: ["0", "2500"],
+  translateY: ["0", "700"],
+  scale: ["1", "2"],
+  scaleY: ["-0.05", "1", "1", "1", "1"],
+  delay: 3000,
+  duration: 1200,
+  autoplay: false,
+});
+
+let finalPlane2Ani = anime({
+  targets: ".final-plane2_ani",
+  easing: "easeInOutSine",
+  translateX: ["0", "-3500"],
+  translateY: ["200", "2000"],
+  scale: ["1", "3"],
+  opacity: ["0.5", "0.8"],
+  scaleY: ["0.7", "1", "1", "1", "1", "1", "1"],
+  delay: 2030,
+  duration: 350,
+  autoplay: false,
+});
+
 let circleCropAni = anime({
   targets: ".circle_crop_ani",
   easing: "easeInOutSine",
@@ -842,6 +866,7 @@ let circleCropAni = anime({
   autoplay: false,
 });
 
+
 let referenceImgeDeorationCropAni = anime({
   targets: ".reference_imge_deoration_crop_ani",
   easing: "easeInOutSine",
@@ -850,7 +875,7 @@ let referenceImgeDeorationCropAni = anime({
     { clipPath: "circle(100% at 50% 50%)", opacity: "1" },
   ],
   autoplay: false,
-  delay: 2
+  delay: 2,
 });
 
 let envolopAni = anime({
@@ -932,6 +957,9 @@ window.onscroll = function (e) {
   smallGearRightAni.seek(window.pageYOffset * 0.1);
   doorLeftAni.seek(window.pageYOffset * 0.08);
   doorRightAni.seek(window.pageYOffset * 0.08);
+
+  finalPlane1Ani.seek(window.pageYOffset * 0.4);
+  finalPlane2Ani.seek(window.pageYOffset * 0.215);
 
   referenceImgeDeorationCropAni.seek(window.pageYOffset * 0.1);
   circleCropAni.seek(window.pageYOffset * 0.1);
