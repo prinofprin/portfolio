@@ -888,8 +888,10 @@ let paperAni = anime({
   targets: ".paper_ani",
   opacity: ["0", "1"],
   keyframes: [
-    { translateY: "-2700" },
-    { translateY: "-2700" },
+    { translateY: "-1850" },
+    { translateY: "-1850" },
+    { translateY: "-1850" },
+    { translateY: "-1850" },
     { translateY: "40" }
   ],
   autoplay: false,
