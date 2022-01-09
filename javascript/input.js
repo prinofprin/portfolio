@@ -1,3 +1,4 @@
+
 //main open animation
 let openingLoadingAni = anime({
   targets: ".opening-loading",
@@ -140,6 +141,7 @@ let start6Ani = anime({
   delay: 900 + openingDelay
 });
 
+
 let start7Ani = anime({
   targets: ".start7_ani",
   clipPath: ["Polygon(0 0, 0 0, 0 100%, 0 100%)", "Polygon(0 0, 100% 0, 100% 100%, 0 100%)"],
@@ -152,6 +154,22 @@ let start7Ani = anime({
   autoplay: false,
   delay: 1200 + openingDelay
 });
+
+/*
+let start7Ani = anime({
+  targets: ".start7_ani",
+  translateX: [-1500, 0],
+  translateY: [700, 0],
+  scale: [3, 1],
+  scaleY: [0.5, 1],
+  opacity: ["0", "0", "1", "1"],
+  easing: "easeOutSine",
+  duration: 700,
+  autoplay: false,
+  delay: 400 + openingDelay
+});
+*/
+
 
 let openingLogo1Ani = anime({
   targets: ".opening_logo1_ani",
@@ -215,7 +233,7 @@ let openingResumeTitleAni = anime({
 
 
 var delayInMilliseconds = 3000;
-var delayInMilliseconds2 = 2000;
+var delayInMilliseconds2 = 2500;
 var delayInMilliseconds3 = 1000;
 
 function scollTopFunction() {
@@ -265,23 +283,23 @@ function typingSeekJob() {
   let typewriter = new Typewriter(app, {
     loop: true,
     cursor: "",
-    delay: 150,
+    delay: 110,
   });
-  let pause = 1500;
+  let pause = 1100;
 
   typewriter
     .typeString("Design")
-    .pauseFor(2500)
+    .pauseFor(1200)
     .deleteAll()
     .typeString("Business")
-    .pauseFor(2500)
+    .pauseFor(1200)
     .deleteAll()
     .typeString("UX & UI")
-    .pauseFor(2500)
+    .pauseFor(1200)
     .deleteAll()
-    .pauseFor(2500)
+    .pauseFor(1200)
     .typeString("Automation")
-    .pauseFor(2500)
+    .pauseFor(1200)
     .deleteAll()
     .start();
 }
@@ -967,9 +985,6 @@ window.onscroll = function (e) {
   circleCropAni.seek(window.pageYOffset * 0.1);
   paperAni.seek(window.pageYOffset * 0.097);
   footerArrowAni.seek(window.pageYOffset * 0.097);
-
-  console.log(window.pageYOffset);
-
 
   scramble1.start();
   scramble2.start();
