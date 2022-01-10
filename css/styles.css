@@ -231,6 +231,37 @@ html {
     transform: translate(14rem, 14rem);
 }
 
+.hero-projects{
+    position: absolute;
+    left: 0;
+    background-color: var(--color-background);
+    height: 20rem;
+    width: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transition: width 0.2s ease-in;
+}
+
+.hero-projects:hover{
+    /*height: 104rem;*/
+    width: 4rem;
+}
+
+.hero-projects p{
+    color: white;
+    opacity: 0.;
+    writing-mode: tb-rl;
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+.hero-projects-title{
+    color: white;
+}
 
 .corner {
     width: 20px;
@@ -348,6 +379,9 @@ html {
     transform: rotate(4deg);
 }
 
+.hero-projects:hover  ~ .hero_mouse{
+    transform: rotate(-134deg);
+}
 
 .resume_icon:hover ~ .hero-mouse_img{
     transform: translate(750px, -500px);
