@@ -1276,15 +1276,23 @@ p {
 }
 
 .line_height1{
-    height: 29rem;
+    height: 32rem;
 }
 
 .line_height2{
-    height: 35rem;
+    height: 37rem;
 }
 
 .line_height3{
-    height: 32rem;
+    height: 39rem;
+}
+
+.line_height4{
+    height: 35rem;
+}
+
+.line_height5{
+    height: 30rem;
 }
 
 .work-content{
@@ -2512,6 +2520,14 @@ p {
     
     .line_height3{
         height: 30rem;
+    }
+
+    .line_height4{
+        height: 30rem;
+    }
+    
+    .line_height5{
+        height: 25.5rem;
     }
 
     /* footer 500px*/
