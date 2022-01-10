@@ -2,7 +2,7 @@
     --color-primary: #232121;
     --color-secondary: #494948;
     --color-tertiary: #7395ae;
-    --color-accent: #5d5c61;
+    --color-accent: #12172b;
     --color-accent-secondary: #938e94;
 
     --color-head-text: #ffffff;
@@ -217,7 +217,6 @@ html {
     top: -8rem;
     right: 17rem;
     transition: transform 0.2s ease-in;
-    
 }
 
 .resume_degree{
@@ -297,6 +296,7 @@ html {
 .hero_position h2{
     font-weight: normal;
     text-align: center;
+    color: var(--color-accent);
 }
 
 .hero_else{
@@ -1349,6 +1349,16 @@ p {
     background-color: white;
     opacity: 0.8;
 }
+
+
+.chain_icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 0px;
+    opacity: 0.7;
+}
+
 
 .flashing_ani{
     transition: opacity ease-in;
