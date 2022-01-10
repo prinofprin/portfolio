@@ -231,6 +231,16 @@ let openingResumeTitleAni = anime({
 });
 
 
+let openingHeroProjectAni = anime({
+  targets: ".opening_hero-projects_ani",
+  translateX: ["-300", "0"],
+  easing: "easeInOutSine",
+  duration: 1000,
+  autoplay: false,
+  delay: 1400 + openingDelay
+});
+
+
 
 var delayInMilliseconds = 3000;
 var delayInMilliseconds2 = 2500;
@@ -262,6 +272,7 @@ window.onload = function (e) {
   openingLogo3Ani.play()
   openingLogo4Ani.play()
   openingResumeTitleAni.play()
+  openingHeroProjectAni.play()
 
   setTimeout(function () {
     document.getElementById('opening').remove();

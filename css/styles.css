@@ -234,33 +234,42 @@ html {
 .hero-projects{
     position: absolute;
     left: 0;
-    background-color: var(--color-background);
-    height: 20rem;
-    width: 2.7rem;
+    background-color: #dd3636;
+    height: 18rem;
+    width: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 99;
-    transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in, background-color 0.2s ease-in;
 }
 
 .hero-projects:hover{
     /*height: 104rem;*/
-    width: 4rem;
+    width: 6rem;
+    background-color: var(--color-primary);
+}
+
+.hero-project_arrow{
+    margin-top: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 1;
 }
 
 .hero-projects p{
     color: white;
-    opacity: 0.;
+    opacity: 0.9;
     writing-mode: tb-rl;
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
 .hero-projects-title{
     color: white;
+    opacity: 0.8;
 }
 
 .corner {
