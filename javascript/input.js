@@ -287,6 +287,7 @@ window.onload = function (e) {
 
 }
 
+
 //type animation
 function typingSeekJob() {
   let app = document.getElementById("wanted_job");
@@ -322,6 +323,7 @@ function typingSeekJob() {
 document.querySelector(".hero-meiji_hover_color").onmouseout = function () {
   this.src = 'images/decorations/hero-meiji.svg';
 };
+
 document.querySelector(".hero-meiji_hover_color").onmouseover = function () {
   this.src = 'images/decorations/hero-color_meiji.svg';
 }

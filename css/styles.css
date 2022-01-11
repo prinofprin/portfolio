@@ -248,7 +248,6 @@ html {
 .hero-projects:hover{
     /*height: 104rem;*/
     width: 6rem;
-    background-color: var(--color-primary);
 }
 
 .hero-project_arrow{
@@ -336,7 +335,7 @@ html {
 .hero_position h2{
     font-weight: normal;
     text-align: center;
-    color: var(--color-accent);
+    color: var(--color-primary)
 }
 
 .hero_else{
@@ -684,6 +683,9 @@ p {
         transform: translate(0,  0px);
     } 
 }
+
+/*glitch effect on logo*/
+
 
 /* contact */
 
