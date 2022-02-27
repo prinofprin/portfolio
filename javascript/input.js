@@ -306,7 +306,7 @@ function typingSeekJob() {
     .typeString("Business")
     .pauseFor(1200)
     .deleteAll()
-    .typeString("UX & UI")
+    .typeString("Design")
     .pauseFor(1200)
     .deleteAll()
     .start();
