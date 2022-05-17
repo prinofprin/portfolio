@@ -300,10 +300,10 @@ function typingSeekJob() {
   let pause = 1100;
 
   typewriter
-    .typeString("Content Creator")
+    .typeString("Coding")
     .pauseFor(1200)
     .deleteAll()
-    .typeString("Business")
+    .typeString("Analysis")
     .pauseFor(1200)
     .deleteAll()
     .typeString("Design")
