@@ -283,8 +283,6 @@ window.onload = function (e) {
   setTimeout(function () {
     scollTopFunction();
   }, delayInMilliseconds3);
-
-
 }
 
 
@@ -300,20 +298,17 @@ function typingSeekJob() {
   let pause = 1100;
 
   typewriter
-    .typeString("Coding")
+    .typeString("Automation")
     .pauseFor(1200)
     .deleteAll()
     .typeString("Analysis")
     .pauseFor(1200)
     .deleteAll()
-    .typeString("Design")
+    .typeString("Low Coding")
     .pauseFor(1200)
     .deleteAll()
     .start();
 }
-
-
-
 
 // change university logo img to color when hover
 document.querySelector(".hero-meiji_hover_color").onmouseout = function () {
